@@ -1,0 +1,101 @@
+cve-id,published_date,updated_date,os_name_versions,os_version_specified,Other_Environment_Restrictions,matadonnées_conformitie,patch_availability,lien_vers_le_patch,Metigation_availability
+CVE-2024-48786,2024-10-11T21:15:06.277000+01:00,2024-10-11T21:15:06.277000+01:00,N/A,No,Yes,1,No,N/A,Yes
+CVE-2024-48784,2024-10-11T21:15:06.180000+01:00,2024-10-11T21:15:06.180000+01:00,N/A,No,Yes,1,No,N/A,Yes
+CVE-2024-48778,2024-10-11T21:15:06.090000+01:00,2024-10-11T21:15:06.090000+01:00,Ubuntu 18.04,Yes,Yes,1,No,N/A,Yes
+CVE-2024-48777,2024-10-11T21:15:05.997000+01:00,2024-10-11T21:15:05.997000+01:00,N/A,No,Yes,1,No,N/A,Yes
+CVE-2024-48776,2024-10-11T21:15:05.903000+01:00,2024-10-11T21:15:05.903000+01:00,N/A,No,Yes,1,No,N/A,Yes
+CVE-2024-48775,2024-10-11T21:15:05.810000+01:00,2024-10-11T21:15:05.810000+01:00,N/A,No,Yes,1,No,N/A,Yes
+CVE-2024-48774,2024-10-11T21:15:05.720000+01:00,2024-10-11T21:15:05.720000+01:00,Linux CentOS,Yes,Yes,1,No,N/A,Yes
+CVE-2024-48773,2024-10-11T21:15:05.637000+01:00,2024-10-11T21:15:05.637000+01:00,Android 4.4 and above,Yes,Yes,1,No,N/A,Yes
+CVE-2024-48771,2024-10-11T21:15:05.537000+01:00,2024-10-11T21:15:05.537000+01:00,"Android All versions, iOS All versions",No,Yes,1,No,N/A,Yes
+CVE-2024-48770,2024-10-11T21:15:05.450000+01:00,2024-10-11T21:15:05.450000+01:00,N/A,No,Yes,1,No,N/A,Yes
+CVE-2024-48769,2024-10-11T21:15:05.353000+01:00,2024-10-11T21:15:05.353000+01:00,N/A,No,Yes,1,No,N/A,Yes
+CVE-2024-48768,2024-10-11T21:15:05.253000+01:00,2024-10-11T21:15:05.253000+01:00,"Android All versions, iOS All versions",No,Yes,1,No,N/A,Yes
+CVE-2024-47884,2024-10-11T21:15:04.993000+01:00,2024-10-11T21:15:04.993000+01:00,Linux All versions,No,Yes,1,Yes,https://github.com/zefr0x/foxmarks/commit/c3706bd882b3d61b353e4193f7d2dcfabd0c9a8e,No
+CVE-2024-38365,2024-10-11T21:15:04.733000+01:00,2024-10-11T21:15:04.733000+01:00,N/A,No,Yes,0,Yes,https://github.com/btcsuite/btcd/releases/tag/v0.24.2,No
+CVE-2024-8912,2024-10-11T20:15:11.110000+01:00,2024-10-11T20:15:11.110000+01:00,"Linux Container-Optimized OS, Windows Windows Server",Yes,Yes,1,Yes,https://download.looker.com/,No
+CVE-2024-48041,2024-10-11T20:15:10.880000+01:00,2024-10-11T20:15:10.880000+01:00,WordPress All versions compatible with CM Tooltip Glossary plugin <= 4.3.9,Yes,Yes,1,Yes,https://patchstack.com/database/vulnerability/enhanced-tooltipglossary/wordpress-cm-tooltip-glossary-plugin-4-3-9-privilege-escalation-vulnerability?_s_id=cve,No
+CVE-2024-48040,2024-10-11T20:15:10.660000+01:00,2024-10-11T20:15:10.660000+01:00,N/A,No,Yes,1,Yes,https://patchstack.com/database/vulnerability/tainacan/wordpress-tainacan-plugin-0-21-8-sql-injection-vulnerability?_s_id=cve,No
+CVE-2024-48033,2024-10-11T20:15:10.430000+01:00,2024-10-11T20:15:10.430000+01:00,N/A,No,Yes,1,No,N/A,Yes
+CVE-2024-48020,2024-10-11T20:15:10.220000+01:00,2024-10-11T20:15:10.220000+01:00,N/A,No,Yes,1,Yes,https://patchstack.com/database/vulnerability/wp-time-capsule/wordpress-backup-and-staging-by-wp-time-capsule-plugin-1-22-21-sql-injection-vulnerability?_s_id=cve,No
+CVE-2024-47353,2024-10-11T20:15:10.003000+01:00,2024-10-11T20:15:10.003000+01:00,WordPress All versions compatible with Elementor plugin,Yes,Yes,1,Yes,https://patchstack.com/database/vulnerability/element-ready-lite/wordpress-elementsready-addons-for-elementor-plugin-6-4-2-open-redirection-vulnerability?_s_id=cve,No
+CVE-2024-47331,2024-10-11T20:15:09.783000+01:00,2024-10-11T20:15:09.783000+01:00,WordPress <= 2.7.7,Yes,Yes,1,Yes,https://patchstack.com/database/vulnerability/cf7-multi-step/wordpress-multi-step-for-contact-form-plugin-2-7-7-unauthenticated-sql-injection-vulnerability?_s_id=cve,No
+CVE-2024-9539,2024-10-11T19:15:08.887000+01:00,2024-10-11T19:15:08.887000+01:00,"Linux Ubuntu 20.04, Windows Windows Server 2019, macOS macOS 11",Yes,Yes,1,Yes,https://docs.github.com/en/enterprise-server@3.12/admin/release-notes#3.12.10,No
+CVE-2024-46532,2024-10-11T19:15:08.267000+01:00,2024-10-11T19:15:08.267000+01:00,N/A,No,Yes,1,No,N/A,Yes
+CVE-2024-44807,2024-10-11T19:15:08.133000+01:00,2024-10-11T19:15:08.133000+01:00,N/A,No,Yes,1,Yes,https://burger.d-zero.co.jp/blogs/archives/2,No
+CVE-2024-44157,2024-10-11T19:15:08.030000+01:00,2024-10-11T19:15:08.030000+01:00,Windows 10,Yes,Yes,1,Yes,https://support.apple.com/en-us/121328,No
+CVE-2024-9859,2024-10-11T18:15:04.677000+01:00,2024-10-11T18:15:04.677000+01:00,N/A,No,Yes,1,No,N/A,Yes
+CVE-2024-47877,2024-10-11T18:15:04.450000+01:00,2024-10-11T18:15:04.450000+01:00,N/A,No,Yes,1,Yes,https://github.com/codeclysm/extract/commit/4a98568021b8e289345c7f526ccbd7ed732cf286,No
+CVE-2024-46215,2024-10-11T18:15:04.260000+01:00,2024-10-11T18:15:04.260000+01:00,Linux All versions,No,Yes,1,No,N/A,Yes
+CVE-2024-44734,2024-10-11T18:15:04.157000+01:00,2024-10-11T18:15:04.157000+01:00,N/A,No,Yes,1,No,N/A,Yes
+CVE-2024-44731,2024-10-11T18:15:04.080000+01:00,2024-10-11T18:15:04.080000+01:00,N/A,No,Yes,1,Yes,https://github.com/miroslavpejic85/mirotalk,No
+CVE-2024-44415,2024-10-11T18:15:03.967000+01:00,2024-10-11T18:15:03.967000+01:00,N/A,No,Yes,1,No,N/A,Yes
+CVE-2024-44414,2024-10-11T18:15:03.880000+01:00,2024-10-11T22:36:31.953000+01:00,WAYOS FBM_292W-21.03.10V,Yes,Yes,1,No,N/A,Yes
+CVE-2024-44413,2024-10-11T18:15:03.790000+01:00,2024-10-11T18:15:03.790000+01:00,N/A,No,Yes,1,No,N/A,Yes
+CVE-2024-42018,2024-10-11T18:15:03.573000+01:00,2024-10-11T18:15:03.573000+01:00,Linux All versions,No,Yes,1,No,N/A,Yes
+CVE-2024-9046,2024-10-11T17:15:15+01:00,2024-10-11T17:15:15+01:00,Windows 10,Yes,Yes,1,No,N/A,Yes
+CVE-2024-8376,2024-10-11T17:15:14.860000+01:00,2024-10-11T17:15:14.860000+01:00,N/A,No,Yes,1,Yes,https://github.com/eclipse/mosquitto/releases/tag/v2.0.19,No
+CVE-2024-6985,2024-10-11T17:15:14.657000+01:00,2024-10-11T17:15:14.657000+01:00,N/A,No,Yes,1,Yes,https://github.com/parisneo/lollms/commit/28ee567a9a120967215ff19b96ab7515ce469620,No
+CVE-2024-5474,2024-10-11T17:15:14.440000+01:00,2024-10-11T17:15:14.440000+01:00,N/A,No,Yes,1,No,N/A,Yes
+CVE-2024-4132,2024-10-11T17:15:14.243000+01:00,2024-10-11T17:15:14.243000+01:00,Windows 10,Yes,Yes,1,No,N/A,Yes
+CVE-2024-4131,2024-10-11T17:15:14.050000+01:00,2024-10-11T17:15:14.050000+01:00,Windows 10,Yes,Yes,1,No,N/A,Yes
+CVE-2024-4130,2024-10-11T17:15:13.840000+01:00,2024-10-11T17:15:13.840000+01:00,Windows 10,Yes,Yes,1,No,N/A,Yes
+CVE-2024-4089,2024-10-11T17:15:13.633000+01:00,2024-10-11T17:15:13.633000+01:00,Windows All versions,No,Yes,1,No,N/A,Yes
+CVE-2024-48827,2024-10-11T17:15:13.550000+01:00,2024-10-11T22:36:44.280000+01:00,N/A,No,Yes,1,No,N/A,Yes
+CVE-2024-48813,2024-10-11T17:15:13.453000+01:00,2024-10-11T22:36:43.527000+01:00,"Windows 10, Linux Ubuntu 20.04",Yes,Yes,1,No,N/A,Yes
+CVE-2024-47509,2024-10-11T17:15:13.187000+01:00,2024-10-11T17:15:13.187000+01:00,Junos OS Evolved All versions before 21.4R2-EVO,Yes,Yes,1,No,N/A,Yes
+CVE-2024-47508,2024-10-11T17:15:12.957000+01:00,2024-10-11T17:15:12.957000+01:00,Junos OS Evolved All versions before 21.2R3-S8-EVO,Yes,Yes,1,No,N/A,Yes
+CVE-2024-47507,2024-10-11T17:15:12.700000+01:00,2024-10-11T17:15:12.700000+01:00,"Junos OS All versions before 21.4R3-S6, 22.2 versions before 22.2R3-S3, 22.4 versions before 22.4R3, Junos OS Evolved All versions before 21.4R3-S7-EVO, 22.2 versions before 22.2R3-S4-EVO, 22.4 versions before 22.4R3-EVO",Yes,Yes,1,No,N/A,Yes
+CVE-2024-47506,2024-10-11T17:15:12.450000+01:00,2024-10-11T17:15:12.450000+01:00,Junos OS All versions before 21.3R3-S1,Yes,Yes,0,No,N/A,Yes
+CVE-2024-47505,2024-10-11T17:15:12.210000+01:00,2024-10-11T17:15:12.210000+01:00,Junos OS Evolved All versions before 21.4R3-S7-EVO,Yes,Yes,1,No,N/A,Yes
+CVE-2024-47504,2024-10-11T17:15:11.900000+01:00,2024-10-11T17:15:11.900000+01:00,Junos OS 22.1R1 and later before 22.2R3-S5,Yes,Yes,1,No,N/A,Yes
+CVE-2024-47503,2024-10-11T17:15:11.663000+01:00,2024-10-11T17:15:11.663000+01:00,Junos OS All versions before 21.4R3-S9,Yes,Yes,1,No,N/A,Yes
+CVE-2024-47502,2024-10-11T17:15:11.413000+01:00,2024-10-11T17:15:11.413000+01:00,Junos OS Evolved All versions before 21.4R3-S9-EVO,Yes,Yes,1,No,N/A,Yes
+CVE-2024-47501,2024-10-11T17:15:11.167000+01:00,2024-10-11T17:15:11.167000+01:00,Junos OS All versions before 21.2R3-S1,Yes,Yes,1,No,N/A,Yes
+CVE-2024-47499,2024-10-11T17:15:10.850000+01:00,2024-10-11T17:15:10.850000+01:00,"Junos OS All versions before 21.2R3-S8, Junos OS Evolved 21.4 versions before 21.4R3-S8",Yes,Yes,1,No,N/A,Yes
+CVE-2024-47498,2024-10-11T17:15:10.590000+01:00,2024-10-11T17:15:10.590000+01:00,Junos OS Evolved 21.4R3-S8-EVO,Yes,Yes,1,No,N/A,Yes
+CVE-2024-47497,2024-10-11T17:15:10.340000+01:00,2024-10-11T17:15:10.340000+01:00,Junos OS All versions before 21.4R3-S7,Yes,Yes,1,No,N/A,Yes
+CVE-2024-47496,2024-10-11T17:15:10.080000+01:00,2024-10-11T17:15:10.080000+01:00,Junos OS All versions before 21.4R3-S9,Yes,Yes,1,No,N/A,Yes
+CVE-2024-47495,2024-10-11T17:15:09.830000+01:00,2024-10-11T17:15:09.830000+01:00,Juniper Networks Junos OS Evolved All versions before 21.2R3-S8-EVO,Yes,Yes,1,No,N/A,Yes
+CVE-2024-47494,2024-10-11T17:15:09.580000+01:00,2024-10-11T17:15:09.580000+01:00,Junos OS All versions before 21.4R3-S9,Yes,Yes,1,No,N/A,Yes
+CVE-2024-47493,2024-10-11T17:15:09.320000+01:00,2024-10-11T17:15:09.320000+01:00,Junos OS All versions before 21.2R3-S7,Yes,Yes,1,No,N/A,Yes
+CVE-2024-47491,2024-10-11T17:15:09.060000+01:00,2024-10-11T17:15:09.060000+01:00,"Juniper Networks Junos OS All versions before 21.4R3-S8, from 22.2 before 22.2R3-S4, from 22.4 before 22.4R3-S3, from 23.2 before 23.2R2-S1, from 23.4 before 23.4R1-S2, 23.4R2, Juniper Networks Junos OS Evolved All versions before 21.4R3-S8-EVO, from 22.2 before 22.2R3-S4-EVO, from 22.4 before 22.4R3-S3-EVO, from 23.2 before 23.2R2-S1-EVO, from 23.4 before 23.4R1-S2-EVO, 23.4R2-EVO",Yes,Yes,1,No,N/A,Yes
+CVE-2024-47490,2024-10-11T17:15:08.803000+01:00,2024-10-11T17:15:08.803000+01:00,Junos OS Evolved All versions before 21.4R3-S9-EVO,Yes,Yes,1,No,N/A,Yes
+CVE-2024-47489,2024-10-11T17:15:08.533000+01:00,2024-10-11T17:15:08.533000+01:00,Junos OS Evolved All versions before 21.4R3-S8-EVO,Yes,Yes,1,No,N/A,Yes
+CVE-2024-46088,2024-10-11T17:15:08.357000+01:00,2024-10-11T22:36:35.423000+01:00,N/A,No,Yes,1,No,N/A,Yes
+CVE-2024-44730,2024-10-11T17:15:08.250000+01:00,2024-10-11T17:15:08.250000+01:00,N/A,No,Yes,1,Yes,https://github.com/miroslavpejic85/mirotalk,No
+CVE-2024-44729,2024-10-11T17:15:08.150000+01:00,2024-10-11T17:15:08.150000+01:00,N/A,No,Yes,1,Yes,https://github.com/miroslavpejic85/mirotalk,No
+CVE-2024-42640,2024-10-11T17:15:08.040000+01:00,2024-10-11T17:15:08.040000+01:00,N/A,No,Yes,1,Yes,https://github.com/adonespitogo/angular-base64-upload,No
+CVE-2024-39563,2024-10-11T17:15:07.740000+01:00,2024-10-11T17:15:07.740000+01:00,Juniper Junos 24.1R1,Yes,Yes,1,No,N/A,Yes
+CVE-2024-39547,2024-10-11T17:15:07.483000+01:00,2024-10-11T17:15:07.483000+01:00,"Junos OS All versions before 21.2R3-S8, Junos OS Evolved 21.4 before 21.4R3-S7",Yes,Yes,1,No,N/A,Yes
+CVE-2024-39544,2024-10-11T17:15:07.240000+01:00,2024-10-11T17:15:07.240000+01:00,Junos OS Evolved All versions before 20.4R3-S9-EVO,Yes,Yes,1,No,N/A,Yes
+CVE-2024-39534,2024-10-11T17:15:06.970000+01:00,2024-10-11T17:15:06.970000+01:00,Junos OS Evolved All versions before 21.4R3-S8-EVO,Yes,Yes,1,No,N/A,Yes
+CVE-2024-39527,2024-10-11T17:15:06.707000+01:00,2024-10-11T17:15:06.707000+01:00,Junos OS All versions before 21.4R3-S8,Yes,Yes,1,No,N/A,Yes
+CVE-2024-39526,2024-10-11T17:15:06.440000+01:00,2024-10-11T17:15:06.440000+01:00,"Junos OS All versions before 21.2R3-S7, from 21.4 before 21.4R3-S6, from 22.2 before 22.2R3-S3, all versions of 22.3, from 22.4 before 22.4R3, from 23.2 before 23.2R2, Junos OS Evolved from 19.3R1-EVO before 21.2R3-S8-EVO, from 21.4-EVO before 21.4R3-S7-EVO, from 22.1-EVO before 22.1R3-S6-EVO, from 22.2-EVO before 22.2R3-S5-EVO, from 22.3-EVO before 22.3R3-S3-EVO, from 22.4-EVO before 22.4R3-S1-EVO, from 23.2-EVO before 23.2R2-S2-EVO, from 23.4-EVO before 23.4R2-EVO",Yes,Yes,1,No,N/A,Yes
+CVE-2024-33582,2024-10-11T17:15:06.147000+01:00,2024-10-11T17:15:06.147000+01:00,Windows All versions,No,Yes,1,No,N/A,Yes
+CVE-2024-33581,2024-10-11T17:15:05.943000+01:00,2024-10-11T17:15:05.943000+01:00,Windows 10,Yes,Yes,1,No,N/A,Yes
+CVE-2024-33580,2024-10-11T17:15:05.730000+01:00,2024-10-11T17:15:05.730000+01:00,Windows 10,Yes,Yes,1,No,N/A,Yes
+CVE-2024-33579,2024-10-11T17:15:05.523000+01:00,2024-10-11T17:15:05.523000+01:00,Windows All versions,No,Yes,1,No,N/A,Yes
+CVE-2024-33578,2024-10-11T17:15:05.277000+01:00,2024-10-11T17:15:05.277000+01:00,Windows All versions,No,Yes,1,No,N/A,Yes
+CVE-2024-8755,2024-10-11T16:15:06.150000+01:00,2024-10-11T16:15:06.150000+01:00,Linux 7.2.55.0 to 7.2.60.1,Yes,Yes,1,No,N/A,Yes
+CVE-2024-47875,2024-10-11T16:15:05.860000+01:00,2024-10-11T16:15:05.860000+01:00,Windows Latest,Yes,Yes,1,Yes,https://github.com/cure53/DOMPurify/commit/0ef5e537a514f904b6aa1d7ad9e749e365d7185f,No
+CVE-2023-42133,2024-10-11T14:15:15.190000+01:00,2024-10-11T14:15:15.190000+01:00,Android All versions below 11.1.61_20240226,Yes,Yes,1,Yes,https://cert.pl/en/posts/2024/10/CVE-2023-42133,No
+CVE-2024-9822,2024-10-11T04:15:10.967000+01:00,2024-10-11T04:15:10.967000+01:00,N/A,No,Yes,1,No,N/A,Yes
+CVE-2024-9818,2024-10-11T00:15:03.680000+01:00,2024-10-11T00:15:03.680000+01:00,"Windows 10, Linux Ubuntu 20.04, macOS 10.15.7",Yes,Yes,1,No,N/A,Yes
+CVE-2024-9817,2024-10-11T00:15:03.410000+01:00,2024-10-11T00:15:03.410000+01:00,"Windows 10, Linux Ubuntu 20.04, macOS 10.15.7",Yes,Yes,1,No,N/A,Yes
+CVE-2024-47872,2024-10-11T00:15:03.303000+01:00,2024-10-11T00:15:03.303000+01:00,N/A,No,Yes,1,Yes,https://github.com/gradio-app/gradio/security/advisories/GHSA-gvv6-33j7-884g,No
+CVE-2024-47871,2024-10-11T00:15:03.187000+01:00,2024-10-11T00:15:03.187000+01:00,N/A,No,Yes,1,Yes,https://github.com/gradio-app/gradio/security/advisories/GHSA-279j-x4gx-hfrh,No
+CVE-2024-47870,2024-10-11T00:15:03.070000+01:00,2024-10-11T00:15:03.070000+01:00,N/A,No,Yes,1,Yes,https://github.com/gradio-app/gradio/security/advisories/GHSA-xh2x-3mrm-fwqm,No
+CVE-2024-47869,2024-10-11T00:15:02.930000+01:00,2024-10-11T00:15:02.930000+01:00,N/A,No,Yes,1,Yes,https://github.com/gradio-app/gradio/security/advisories/GHSA-j757-pf57-f8r4,No
+CVE-2024-47868,2024-10-11T00:15:02.797000+01:00,2024-10-11T00:15:02.797000+01:00,N/A,No,Yes,1,Yes,https://github.com/gradio-app/gradio/security/advisories/GHSA-4q3c-cj7g-jcwf,No
+CVE-2024-47867,2024-10-11T00:15:02.640000+01:00,2024-10-11T00:15:02.640000+01:00,N/A,No,Yes,1,Yes,https://github.com/gradio-app/gradio/security/advisories/GHSA-8c87-gvhj-xm8m,No
+CVE-2024-9816,2024-10-10T23:15:12.230000+01:00,2024-10-10T23:15:12.230000+01:00,"Windows 10, Linux Ubuntu 20.04, macOS 10.15.7",Yes,Yes,0,No,N/A,Yes
+CVE-2024-9815,2024-10-10T23:15:11.917000+01:00,2024-10-10T23:15:11.917000+01:00,"Windows 10, Linux Ubuntu 20.04, macOS 10.15.7",Yes,Yes,0,No,N/A,Yes
+CVE-2024-9814,2024-10-10T23:15:11.570000+01:00,2024-10-10T23:15:11.570000+01:00,N/A,No,Yes,1,No,N/A,Yes
+CVE-2024-9487,2024-10-10T23:15:11.357000+01:00,2024-10-10T23:15:11.357000+01:00,"Linux Ubuntu 20.04, Windows Windows Server 2019, macOS macOS 11",Yes,Yes,1,Yes,https://docs.github.com/en/enterprise-server@3.11/admin/release-notes#3.11.16,No
+CVE-2024-47168,2024-10-10T23:15:11.173000+01:00,2024-10-10T23:15:11.173000+01:00,N/A,No,Yes,1,Yes,https://github.com/gradio-app/gradio/security/advisories/GHSA-hm3c-93pg-4cxw,No
+CVE-2024-47167,2024-10-10T23:15:11+01:00,2024-10-10T23:15:11+01:00,N/A,No,Yes,1,Yes,https://github.com/gradio-app/gradio/security/advisories/GHSA-576c-3j53-r9jj,No
+CVE-2024-47166,2024-10-10T23:15:10.833000+01:00,2024-10-10T23:15:10.833000+01:00,N/A,No,Yes,1,Yes,https://github.com/gradio-app/gradio/security/advisories/GHSA-37qc-qgx6-9xjv,No
+CVE-2024-47165,2024-10-10T23:15:10.680000+01:00,2024-10-10T23:15:10.680000+01:00,N/A,No,Yes,1,Yes,https://github.com/gradio-app/gradio/security/advisories/GHSA-89v2-pqfv-c5r9,No
+CVE-2024-47164,2024-10-10T23:15:10.437000+01:00,2024-10-10T23:15:10.437000+01:00,N/A,No,Yes,1,Yes,https://github.com/gradio-app/gradio/security/advisories/GHSA-77xq-6g77-h274,No
+CVE-2024-47084,2024-10-10T23:15:10.263000+01:00,2024-10-10T23:15:10.263000+01:00,N/A,No,Yes,1,Yes,https://github.com/gradio-app/gradio/security/advisories/GHSA-3c67-5hwx,No
