@@ -3,6 +3,8 @@ from decimal import Decimal
 import json
 from langchain_openai import ChatOpenAI
 
+from cvss_base_score_calcul import calculate_base_score
+from cvss_vector_generation import process_cves
 from get_cve import get_filtered_cves
 
 import os
@@ -135,7 +137,10 @@ async def process_cve_exploitability_metrics(cve):
     # Create the prompt
     prompt = create_prompt_for_exploitability_metrics(cve)
     if not prompt:
+        processed_cve = await process_cves([cve])
         cve['advisory_contents'] = ' '
+        cve['generated_cvss_vector'] = processed_cve
+        cve['generated_cvss_score'] = calculate_base_score(processed_cve)
         return cve  # Skip if no prompt (e.g., CVSS vector missing)
 
     # Call the LLM

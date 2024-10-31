@@ -1,0 +1,11 @@
+cve_id,original_vector,generated_vector,match_AV,match_AC,match_PR,match_UI,match_S,match_C,match_I,match_A
+CVE-2024-33864,CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N,False,True,True,False,False,False,False,False
+CVE-2024-34086,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,True,True,True,True,True,True,True,True
+CVE-2024-34357,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N,True,True,True,True,True,True,True,True
+CVE-2024-34687,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:L,True,True,False,True,False,False,False,True
+CVE-2024-34712,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N,True,True,False,True,True,True,True,True
+CVE-2024-34713,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:N/A:N,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:N/A:N,True,True,True,True,True,True,True,True
+CVE-2024-34714,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:H,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:H,True,True,True,True,True,True,True,True
+CVE-2024-34717,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,True,True,True,True,True,True,True,True
+CVE-2024-3579,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:N,True,True,True,True,False,False,False,True
+CVE-2024-4144,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L,True,True,True,True,True,True,True,True

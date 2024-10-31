@@ -2,6 +2,9 @@ from sqlalchemy import Column, Float, Integer, String, Text, DateTime, Boolean, 
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 from datetime import datetime
+from sqlalchemy.dialects.postgresql import UUID
+import uuid
+
 
 # Database URL (customize as needed)
 DATABASE_URL = "postgresql+asyncpg://postgres:admin@localhost/cve_db"
@@ -21,7 +24,7 @@ Base = declarative_base()
 class CVEModel(Base):
     __tablename__ = 'cve_data'
 
-    id = Column(Integer, primary_key=True, index=True)
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)  # Use UUID for ID
     cve_id = Column(String, index=True)  # Removed unique constraint
     source_identifier = Column(String)
     published = Column(DateTime)

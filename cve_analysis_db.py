@@ -13,6 +13,7 @@ from get_cve import get_cve_by_id
 from augmented_cve_gpt import process_cve_augmentation
 from exploitation_context import process_cve_exploitation_context
 from patch_and_mitigation import process_cve_patch_and_mitigation
+import uuid
 
 # Configure logging
 logging.basicConfig(filename='app.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -25,9 +26,9 @@ def convert_decimal(value):
     return value
 
 
-async def analyze_cve(cve_id: str, db: AsyncSession):
+async def analyze_cve(cve_id: str, db: AsyncSession, last_modified_date_db=None):
     """Analyze and process a CVE and save it to the PostgreSQL database."""
-    
+
     # Validate CVE ID format
     cve_pattern = r'^CVE-\d{4}-\d{4,7}$'
     if not re.match(cve_pattern, cve_id):
@@ -39,6 +40,22 @@ async def analyze_cve(cve_id: str, db: AsyncSession):
     if not cve_entry:
         logging.error(f"No data found for CVE ID {cve_id}")
         return None, f"No data found for CVE ID {cve_id}."
+
+    # Compare last_modified date with the one from the database
+    if last_modified_date_db:
+        # Convert both dates to naive datetime for comparison
+        last_modified_cve = cve_entry.get("last_modified")
+        if isinstance(last_modified_cve, str):
+            last_modified_cve = datetime.strptime(last_modified_cve, "%Y-%m-%dT%H:%M:%S.%f%z").replace(tzinfo=None)
+        else:
+            last_modified_cve = last_modified_cve.astimezone(timezone.utc).replace(tzinfo=None)
+
+        # If the last_modified date is the same, skip analysis
+        if last_modified_cve.date() == last_modified_date_db.date():
+            return {
+                "message": f"CVE {cve_id} has already been analyzed with the latest version.",
+                "last_modified": last_modified_date_db
+            }, None
 
     # Process CVE data concurrently
     cve_entry_copy1 = copy.deepcopy(cve_entry)
@@ -65,6 +82,7 @@ async def analyze_cve(cve_id: str, db: AsyncSession):
 
     # Inside your analyze_cve function, when saving the CVE data:
     new_cve = CVEModel(
+    id=uuid.uuid4(),  # Use UUID for ID
     cve_id=final_cve_entry["cve_id"],
     source_identifier=final_cve_entry.get("source_identifier"),
 
