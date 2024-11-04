@@ -1,8 +1,8 @@
 from fastapi import FastAPI, HTTPException, Depends
 from pydantic import BaseModel
 from sqlalchemy.ext.asyncio import AsyncSession
+from cve_analysis_db_v import analyze_cve
 from database import get_db, init_db
-from cve_analysis_db import analyze_cve
 import asyncio
 from sqlalchemy import select
 from database import CVEModel  # Import your model here

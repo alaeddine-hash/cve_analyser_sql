@@ -16,11 +16,6 @@
     "references": "[{\"url\": \"https://linqi.help/Updates/en#/SecurityUpdates\", \"source\": \"cve@mitre.org\"}, {\"url\": \"https://www.linqi.de/de-DE/blog.html\", \"source\": \"cve@mitre.org\"}]",
     "analyzed": false,
     "advisory_contents": " ",
-    "os_name": [
-      "Windows"
-    ],
-    "os_version": null,
-    "vendor_name": null,
     "vulnerability_component_name": "linqi",
     "vulnerability_component_version": "before 1.4.0.1",
     "vulnerability_component_type": "app"
@@ -42,11 +37,8 @@
     "references": "[{\"url\": \"https://cert-portal.siemens.com/productcert/html/ssa-661579.html\", \"source\": \"productcert@siemens.com\"}]",
     "analyzed": false,
     "advisory_contents": " ",
-    "os_name": null,
-    "os_version": null,
-    "vendor_name": "Siemens",
     "vulnerability_component_name": "JT2Go, Teamcenter Visualization",
-    "vulnerability_component_version": "All versions < V2312.0001, V14.1 < V14.1.0.13, V14.2 < V14.2.0.10, V14.3 < V14.3.0.7, V2312 < V2312.0001",
+    "vulnerability_component_version": "All versions < V2312.0001, All versions < V14.1.0.13, All versions < V14.2.0.10, All versions < V14.3.0.7, All versions < V2312.0001",
     "vulnerability_component_type": "app"
   },
   {
@@ -66,11 +58,8 @@
     "references": "[{\"url\": \"https://github.com/TYPO3/typo3/commit/376474904f6b9a54dc1b785a2e45277cbd13b0d7\", \"source\": \"security-advisories@github.com\"}, {\"url\": \"https://github.com/TYPO3/typo3/commit/b31d05d1da3eeaeead2d19eb43b1c3f9c88e15ee\", \"source\": \"security-advisories@github.com\"}, {\"url\": \"https://github.com/TYPO3/typo3/commit/d774642381354d3bf5095a5a26e18acd2767f0b1\", \"source\": \"security-advisories@github.com\"}, {\"url\": \"https://github.com/TYPO3/typo3/security/advisories/GHSA-hw6c-6gwq-3m3m\", \"source\": \"security-advisories@github.com\"}, {\"url\": \"https://typo3.org/security/advisory/typo3-core-sa-2024-009\", \"source\": \"security-advisories@github.com\"}]",
     "analyzed": false,
     "advisory_contents": " ",
-    "os_name": null,
-    "os_version": null,
-    "vendor_name": "TYPO3",
     "vulnerability_component_name": "TYPO3",
-    "vulnerability_component_version": "9.0.0 to 9.5.48 ELTS, 10.4.45 ELTS, 11.5.37 LTS, 12.4.15 LTS, 13.1.1",
+    "vulnerability_component_version": "9.0.0 - 9.5.48 ELTS, 10.4.45 ELTS, 11.5.37 LTS, 12.4.15 LTS, 13.1.1",
     "vulnerability_component_type": "webapp"
   },
   {
@@ -90,10 +79,7 @@
     "references": "[{\"url\": \"https://me.sap.com/notes/3448445\", \"source\": \"cna@sap.com\"}, {\"url\": \"https://support.sap.com/en/my-support/knowledge-base/security-notes-news.html\", \"source\": \"cna@sap.com\"}]",
     "analyzed": false,
     "advisory_contents": " ",
-    "os_name": null,
-    "os_version": null,
-    "vendor_name": "SAP",
-    "vulnerability_component_name": "SAP NetWeaver Application Server for ABAP and ABAP Platform",
+    "vulnerability_component_name": "SAP NetWeaver Application Server for ABAP",
     "vulnerability_component_version": null,
     "vulnerability_component_type": "webapp"
   },
@@ -114,9 +100,6 @@
     "references": "[{\"url\": \"https://github.com/OceanicJS/Oceanic/commit/8bf8ee8373b8c565fbdbf70a609aba4fbc1a1ffe\", \"source\": \"security-advisories@github.com\"}, {\"url\": \"https://github.com/OceanicJS/Oceanic/security/advisories/GHSA-5h5v-hw44-f6gg\", \"source\": \"security-advisories@github.com\"}]",
     "analyzed": false,
     "advisory_contents": " ",
-    "os_name": null,
-    "os_version": null,
-    "vendor_name": null,
     "vulnerability_component_name": "Oceanic",
     "vulnerability_component_version": "< 1.10.4",
     "vulnerability_component_type": "library"

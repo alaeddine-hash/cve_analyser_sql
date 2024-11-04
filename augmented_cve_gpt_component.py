@@ -90,27 +90,20 @@ You are a cybersecurity analyst with expertise in vulnerability assessment. Your
 
 From the provided information, extract the following attributes:
 
-1. **Operating System Name (os_name):**
-   - List all known operating systems affected by this CVE. If it is a component that affects a library or a framework, specify the OS that can handle (run) it.
-   - If not specified, return `null`.
 
-2. **Operating System Version(s) (os_version):**
-   - List the corresponding versions of each OS if applicable. Do not confuse the component version with the operating system version.
-   - If not specified, return `null`.
-
-3. **Vulnerability-Component-Name:**
+1. **Vulnerability-Component-Name:**
    - Name of the vulnerable component (e.g., "OpenSSL", "Apache").
    - If not specified, return `null`.
 
-4. **Vulnerability-Component-Version:**
+2. **Vulnerability-Component-Version:**
    - Version of the vulnerable component.
    - If not specified, return `null`.
 
-5. **Vulnerability-Component-Type:**
+3. **Vulnerability-Component-Type:**
    - Specify the component type. Choose from the following options: `webapp`, `library`, `database`, `kernel`, `driver`, or `app`.
    - If not specified, return `null`.
 
-6. Ensure that the number of items in `os_name` and `os_version` match correctly, even if the version ranges cover multiple entries.
+4. Ensure that the number of items in `Vulnerability-Component-Name` and `Vulnerability-Component-Version` match correctly, even if the version ranges cover multiple entries.
 
 **Output Format:**
 
@@ -118,9 +111,7 @@ Provide your response in valid JSON format with the following structure:
 
 ```json
 {
-  "os_name": ["Operating System Name(s)"] or null,
-  "os_version": ["Operating System Version(s)"] or null,
-  "vendor_name": "Vendor name associated with the CVE" or null,
+
   "vulnerability_component_name": "Component Name" or null,
   "vulnerability_component_version": "Component Version" or null,
   "vulnerability_component_type": "Component Type" or null
@@ -138,7 +129,7 @@ Ensure the JSON is properly formatted and parsable. """
 
     return prompt
 
-async def process_cve_augmentation(cve):
+async def process_cve_augmentation_component(cve):
     print(f"Processing CVE ID: {cve['cve_id']}")
     references = extract_advisory_links(cve)
     if len(references) > 3:
@@ -176,33 +167,27 @@ async def process_cve_augmentation(cve):
         # Parse the JSON output
         try:
             result = json.loads(output_text)
-            os_name = result.get('os_name')
-            os_version = result.get('os_version')
-            vendor_name= result.get('vendor_name')
+            #print(f"LLM Output: {result}")
+            vulnerability_component_name = result.get('vulnerability_component_name')
+            vulnerability_component_version = result.get('vulnerability_component_version')
+            vulnerability_component_type = result.get('vulnerability_component_type')
+
             cve['advisory_contents'] = ' '
-            if isinstance(os_name, list):
-                os_name = [name for name in os_name if isinstance(name, str) and name.strip()]
-            else:
-                os_name = None
+            if isinstance(vulnerability_component_name, list):
+                vulnerability_component_name = [name for name in vulnerability_component_name if isinstance(name, str) and name.strip()]
+            
 
-            if isinstance(os_version, list):
-                os_version = [version for version in os_version if isinstance(version, str) and version.strip()]
-            else:
-                os_version = None
+            if isinstance(vulnerability_component_version, list):
+                vulnerability_component_version = [version for version in vulnerability_component_version if isinstance(version, str) and version.strip()]
+            
             
             
 
-            cve['os_name'] = os_name or None
-            cve['os_version'] = os_version or None
-            cve['vendor_name'] = vendor_name or None
-            cve['vulnerability_component_name'] = result.get('vulnerability_component_name', None)
-            cve['vulnerability_component_version'] = result.get('vulnerability_component_version', None)
-            cve['vulnerability_component_type'] = result.get('vulnerability_component_type', None)
+            cve['vulnerability_component_name'] = vulnerability_component_name
+            cve['vulnerability_component_version'] = vulnerability_component_version
+            cve['vulnerability_component_type'] = vulnerability_component_type
 
             print(f"Augmented CVE Data:")
-            print(f"  OS Name: {cve['os_name']}")
-            print(f"  OS Version: {cve['os_version']}")
-            print(f"  Vendor Name: {cve['vendor_name']}")
             print(f"  Vulnerability Component Name: {cve['vulnerability_component_name']}")
             print(f"  Vulnerability Component Version: {cve['vulnerability_component_version']}")
             print(f"  Vulnerability Component Type: {cve['vulnerability_component_type']}")
@@ -216,7 +201,7 @@ async def process_cve_augmentation(cve):
 
     print("-" * 60)
 
-async def main():
+""" async def main():
     cves_augmented = []
     cves = get_filtered_cves(2024, 2024, 5)
     n = 0
@@ -235,4 +220,4 @@ async def main():
     print("Completed processing CVEs for OS and affected component with versions extracted.")
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    asyncio.run(main()) """

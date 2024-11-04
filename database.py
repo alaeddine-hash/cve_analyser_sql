@@ -7,7 +7,7 @@ import uuid
 
 
 # Database URL (customize as needed)
-DATABASE_URL = "postgresql+asyncpg://postgres:admin@localhost/cve_db"
+DATABASE_URL = "postgresql+asyncpg://postgres:admin@localhost/cve_db_test"
 
 # Create the async engine
 engine = create_async_engine(DATABASE_URL, echo=True)
@@ -44,7 +44,12 @@ class CVEModel(Base):
     os_name = Column(JSON)
     os_version = Column(JSON)
     vendor_name = Column(String)
+    vulnerability_component_name = Column(JSON)
+    vulnerability_component_version = Column(JSON)
+    vulnerability_component_type = Column(JSON)
     Side = Column(String)
+    generated_cvss_vector = Column(String)
+    generated_cvss_score = Column(Float)
     exploitability_metrics = Column(JSON)
     exploitation_context = Column(JSON)
     patch_available = Column(Boolean, default=False)

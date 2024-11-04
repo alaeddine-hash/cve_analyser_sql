@@ -1,11 +1,12 @@
 from decimal import Decimal
+import json
 import logging
 import re
 import asyncio
 import copy
 from datetime import datetime, timezone
 from sqlalchemy.ext.asyncio import AsyncSession
-from database import get_db, CVEModel  # Import database session and model
+from augmented_cve_gpt_component import process_cve_augmentation_component
 
 # Import processing functions
 from cve_check_gpt import process_cve_exploitability_metrics
@@ -15,8 +16,6 @@ from exploitation_context import process_cve_exploitation_context
 from patch_and_mitigation import process_cve_patch_and_mitigation
 import uuid
 
-# Configure logging
-logging.basicConfig(filename='app.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 
 # Helper function to convert Decimal to float or None
@@ -28,7 +27,7 @@ def convert_decimal(value):
 
 async def analyze_cve(cve_id: str, db: AsyncSession, last_modified_date_db=None):
     """Analyze and process a CVE and save it to the PostgreSQL database."""
-
+    from database import CVEModel
     # Validate CVE ID format
     cve_pattern = r'^CVE-\d{4}-\d{4,7}$'
     if not re.match(cve_pattern, cve_id):
@@ -58,20 +57,22 @@ async def analyze_cve(cve_id: str, db: AsyncSession, last_modified_date_db=None)
             }, None
 
     # Process CVE data concurrently
+    cve_entry_copy0 = copy.deepcopy(cve_entry)
     cve_entry_copy1 = copy.deepcopy(cve_entry)
     cve_entry_copy2 = copy.deepcopy(cve_entry)
     cve_entry_copy3 = copy.deepcopy(cve_entry)
     cve_entry_copy4 = copy.deepcopy(cve_entry)
     
     results = await asyncio.gather(
+        process_cve_augmentation_component(cve_entry_copy0),
         process_cve_augmentation(cve_entry_copy1),
         process_cve_exploitation_context(cve_entry_copy2),
         process_cve_exploitability_metrics(cve_entry_copy3),
         process_cve_patch_and_mitigation(cve_entry_copy4)
     )
 
-    cve_entry_augmented, cve_entry_context, cve_entry_metrics, cve_entry_patch = results
-    final_cve_entry = merge_cve_entries([cve_entry, cve_entry_augmented, cve_entry_context, cve_entry_metrics, cve_entry_patch])
+    cve_entry_augmented_component, cve_entry_augmented, cve_entry_context, cve_entry_metrics, cve_entry_patch = results
+    final_cve_entry = merge_cve_entries([cve_entry, cve_entry_augmented_component, cve_entry_augmented, cve_entry_context, cve_entry_metrics, cve_entry_patch])
 
     # Save the new CVE entry to the database
     def make_naive(dt):
@@ -80,6 +81,13 @@ async def analyze_cve(cve_id: str, db: AsyncSession, last_modified_date_db=None)
             return dt.astimezone(timezone.utc).replace(tzinfo=None)
         return dt
 
+    vulnerability_component_name = final_cve_entry.get("vulnerability_component_name")
+    if isinstance(vulnerability_component_name, list):
+        vulnerability_component_name = json.dumps(vulnerability_component_name)
+    
+    vulnerability_component_type = final_cve_entry.get("vulnerability_component_type")
+    if isinstance(vulnerability_component_type, list):
+        vulnerability_component_type = json.dumps(vulnerability_component_type)
     # Inside your analyze_cve function, when saving the CVE data:
     new_cve = CVEModel(
     id=uuid.uuid4(),  # Use UUID for ID
@@ -106,7 +114,12 @@ async def analyze_cve(cve_id: str, db: AsyncSession, last_modified_date_db=None)
     os_name=final_cve_entry.get("os_name"),
     os_version=final_cve_entry.get("os_version"),
     vendor_name=final_cve_entry.get("vendor_name"),
+    vulnerability_component_name=vulnerability_component_name,
+    vulnerability_component_version=final_cve_entry.get("vulnerability_component_version"),
+    vulnerability_component_type=vulnerability_component_type,
     Side = final_cve_entry.get("Side"),
+    generated_cvss_vector=final_cve_entry.get("generated_cvss_vector"),
+    generated_cvss_score=final_cve_entry.get("generated_cvss_score"),
     exploitability_metrics = final_cve_entry.get("exploitability_metrics"),
     exploitation_context=final_cve_entry.get("exploitation_context"),
     patch_available=final_cve_entry.get("patch_available"),

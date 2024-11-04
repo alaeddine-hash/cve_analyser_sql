@@ -179,7 +179,7 @@ async def process_cve_augmentation(cve):
         print(f"Error during LLM processing for CVE ID {cve['cve_id']}: {e}")
 
     print("-" * 60)
-
+""" 
 async def main():
     cves_augmented = []
     cves = get_filtered_cves(2024, 2024, 100)
@@ -198,3 +198,4 @@ async def main():
 
     print("Completed processing CVEs for OS and affected component with versions extracted.")
 
+ """

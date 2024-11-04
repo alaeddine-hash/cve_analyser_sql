@@ -195,7 +195,7 @@ async def process_cve_patch_and_mitigation(cve):
         print(f"Error during LLM processing for CVE ID {cve['cve_id']}: {e}")
         return None
 
-async def main():
+""" async def main():
     cves_with_recommendations = []
     cves = get_filtered_cves(2023, 2023, max_cves=20)  # Adjust the parameters as needed
     
@@ -214,3 +214,4 @@ async def main():
     
     print("Completed processing CVEs for patch availability and mitigation measures.")
 
+ """

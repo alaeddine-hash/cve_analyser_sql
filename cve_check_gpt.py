@@ -184,7 +184,7 @@ async def process_cve_exploitability_metrics(cve):
         print(f"Error during LLM processing for CVE ID {cve['cve_id']}: {e}")
         return None
 
-
+""" 
 async def main():
     cves_with_exploitability = []
     cves = get_filtered_cves(2024, 2024, 110)  # Adjust the parameters as needed
@@ -203,3 +203,4 @@ async def main():
         json.dump(cves_with_exploitability, f, indent=2, default=default_serializer)
 
     print("Completed processing CVEs for exploitability metrics.")
+ """
