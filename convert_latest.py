@@ -2,11 +2,11 @@ import json
 import csv
 
 # Charger les données depuis le fichier JSON
-with open('output_2024_test_v4_latest.json', 'r', encoding='utf-8') as f:
+with open('cve_output_06_11.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 
 # Nom du fichier CSV de sortie
-output_csv_file = 'output_2024_test_v4_latest.csv'
+output_csv_file = 'cve_output_06_11.csv'
 
 # Ouvrir un fichier CSV pour écrire les données
 with open(output_csv_file, mode='w', newline='', encoding='utf-8') as csvfile:
@@ -14,8 +14,9 @@ with open(output_csv_file, mode='w', newline='', encoding='utf-8') as csvfile:
     
     # Écrire l'en-tête du fichier CSV
     csv_writer.writerow([
-    'cve-id', 'published_date', 'updated_date', 'cvss_score', 
-    'vendor_name', 'os_name_versions', 'os_version_specified', 
+    'cve-id', 'published_date', 'updated_date', 'cvss_score', 'cvss_vector_v3',
+    'vulnerability_component_name', 'vulnerability_component_version', 'vulnerability_component_type',
+    'vendor_name', 'os_name_versions', 'os_version_specified','generated_cvss_vector','generated_cvss_score', 
     'Other_Environment_Restrictions', 'matadonnées_conformitie', 
     'patch_availability', 'lien_vers_le_patch', 'patch_date',  # Add comma here
     'mitigation_measures', 'Metigation_availability'
@@ -27,10 +28,16 @@ with open(output_csv_file, mode='w', newline='', encoding='utf-8') as csvfile:
         # Extraire les informations de base
         cve_id = cve.get('cve_id', 'N/A')
         cvss_score = cve.get('cvss_score_v3', 'N/A')
+        cvss_vector_v3= cve.get('cvss_vector_v3', 'N/A')
         published_date = cve.get('published', 'N/A')
         updated_date = cve.get('last_modified', 'N/A')
         vendor_name = cve.get('vendor_name', 'N/A')
-        
+
+        vulnerability_component_name = cve.get('vulnerability_component_name', [])
+        vulnerability_component_version = cve.get('vulnerability_component_version', [])
+        vulnerability_component_type = cve.get('vulnerability_component_type', 'N/A')
+        generated_cvss_vector = cve.get('generated_cvss_vector', 'N/A')
+        generated_cvss_score = cve.get('generated_cvss_score', 'N/A')
         # Récupérer les noms et versions des OS
         os_names = cve.get('os_name', [])
         os_versions = cve.get('os_version', [])
@@ -69,8 +76,9 @@ with open(output_csv_file, mode='w', newline='', encoding='utf-8') as csvfile:
         
         # Écrire les données dans le fichier CSV
         csv_writer.writerow([
-            cve_id, published_date, updated_date, cvss_score, 
-            vendor_name, os_name_versions, os_version_specified, 
+            cve_id, published_date, updated_date, cvss_score, cvss_vector_v3,
+            vulnerability_component_name, vulnerability_component_version, vulnerability_component_type,
+            vendor_name, os_name_versions, os_version_specified, generated_cvss_vector, generated_cvss_score,
             other_environment_restrictions, matadonnées_conformitie, 
             patch_availability, patch_link, patch_date,
             mitigation_measures, mitigation_availability

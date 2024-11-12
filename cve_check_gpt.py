@@ -125,7 +125,7 @@ async def process_cve_exploitability_metrics(cve):
     references = extract_advisory_links(cve)
     # Limit to 3 references if there are more
     if len(references) > 3:
-        references = references[:3]
+        references = references[:2]
     
     # Scrape the advisory contents
     try:

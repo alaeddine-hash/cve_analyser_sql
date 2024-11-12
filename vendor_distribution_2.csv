@@ -1,0 +1,25 @@
+vendor_name,cve_count,patch_available,patch_not_available,patch_available_percentage
+GitHub,2,1,1,50.00%
+Combodo,2,2,0,100.00%
+null,9,8,1,88.89%
+OpenWRT,1,0,1,0.00%
+salesagility,6,6,0,100.00%
+OctoPrint,1,1,0,100.00%
+NVIDIA,2,1,1,50.00%
+Linux Foundation,32,29,3,90.62%
+StarFive,1,1,0,100.00%
+D-Link,2,0,2,0.00%
+Netgear,15,0,15,0.00%
+HP,1,0,1,0.00%
+AMD,3,3,0,100.00%
+Linux,3,3,0,100.00%
+Qualcomm,2,2,0,100.00%
+NXP,1,1,0,100.00%
+Nvidia,1,1,0,100.00%
+LSC Smart Connect,1,0,1,0.00%
+HAPI FHIR,1,0,1,0.00%
+Intel,1,1,0,100.00%
+Adobe,1,1,0,100.00%
+Pixeon,1,0,1,0.00%
+Enel X,8,0,8,0.00%
+Waybox,1,0,1,0.00%

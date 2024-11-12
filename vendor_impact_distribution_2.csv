@@ -1,0 +1,25 @@
+vendor_name,impact_None,impact_Low,impact_Medium,impact_High,impact_Critical
+GitHub,0,0,1,0,1
+Combodo,0,0,1,1,0
+null,1,0,3,3,2
+OpenWRT,0,0,1,0,0
+salesagility,0,0,3,3,0
+OctoPrint,0,0,1,0,0
+NVIDIA,1,0,1,0,0
+Linux Foundation,11,1,16,4,0
+StarFive,1,0,0,0,0
+D-Link,0,0,0,2,0
+Netgear,0,0,10,5,0
+HP,0,0,0,1,0
+AMD,0,0,3,0,0
+Linux,2,0,1,0,0
+Qualcomm,0,0,2,0,0
+NXP,0,0,1,0,0
+Nvidia,0,0,1,0,0
+LSC Smart Connect,0,0,0,1,0
+HAPI FHIR,0,0,0,1,0
+Intel,1,0,0,0,0
+Adobe,0,0,0,1,0
+Pixeon,0,0,1,0,0
+Enel X,0,0,3,1,4
+Waybox,0,0,0,0,1

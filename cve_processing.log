@@ -1,19 +1,630 @@
-2024-11-04 14:47:16,602 - INFO - select pg_catalog.version()
-2024-11-04 14:47:16,603 - INFO - [raw sql] ()
-2024-11-04 14:47:16,605 - INFO - select current_schema()
-2024-11-04 14:47:16,605 - INFO - [raw sql] ()
-2024-11-04 14:47:16,608 - INFO - show standard_conforming_strings
-2024-11-04 14:47:16,608 - INFO - [raw sql] ()
-2024-11-04 14:47:16,610 - INFO - BEGIN (implicit)
-2024-11-04 14:47:16,624 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+2024-11-11 19:29:54,907 - INFO - select pg_catalog.version()
+2024-11-11 19:29:54,908 - INFO - [raw sql] ()
+2024-11-11 19:29:54,912 - INFO - select current_schema()
+2024-11-11 19:29:54,912 - INFO - [raw sql] ()
+2024-11-11 19:29:54,914 - INFO - show standard_conforming_strings
+2024-11-11 19:29:54,915 - INFO - [raw sql] ()
+2024-11-11 19:29:54,918 - INFO - BEGIN (implicit)
+2024-11-11 19:29:54,933 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
 FROM cve_data 
 WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
-2024-11-04 14:47:16,626 - INFO - [generated in 0.00269s] ('CVE-2024-4610',)
-2024-11-04 14:47:22,310 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2024-11-04 14:47:27,885 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2024-11-04 14:47:29,083 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2024-11-04 14:47:31,439 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2024-11-04 14:47:36,531 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-2024-11-04 14:47:36,537 - INFO - INSERT INTO cve_data (id, cve_id, source_identifier, published, last_modified, vuln_status, description, cvss_score_v3, cvss_vector_v3, cvss_score_v2, cvss_vector_v2, weaknesses, configurations, "references", os_name, os_version, vendor_name, vulnerability_component_name, vulnerability_component_version, vulnerability_component_type, "Side", generated_cvss_vector, generated_cvss_score, exploitability_metrics, exploitation_context, patch_available, patch, mitigation_measures, latest_analysis_date) VALUES ($1::UUID, $2::VARCHAR, $3::VARCHAR, $4::TIMESTAMP WITHOUT TIME ZONE, $5::TIMESTAMP WITHOUT TIME ZONE, $6::VARCHAR, $7::VARCHAR, $8::FLOAT, $9::VARCHAR, $10::FLOAT, $11::VARCHAR, $12::JSON, $13::JSON, $14::JSON, $15::JSON, $16::JSON, $17::VARCHAR, $18::JSON, $19::JSON, $20::JSON, $21::VARCHAR, $22::VARCHAR, $23::FLOAT, $24::JSON, $25::JSON, $26::BOOLEAN, $27::JSON, $28::JSON, $29::TIMESTAMP WITHOUT TIME ZONE)
-2024-11-04 14:47:36,540 - INFO - [generated in 0.00288s] (UUID('51bed4f7-e65c-44a9-bc3d-a05348478316'), 'CVE-2024-4610', 'arm-security@arm.com', datetime.datetime(2024, 6, 7, 12, 15, 9, 77000), datetime.datetime(2024, 8, 14, 17, 6, 24, 800000), 'Analyzed', 'Use After Free vulnerability in Arm Ltd Bifrost GPU Kernel Driver, Arm Ltd Valhall GPU Kernel Driver allows a local non-privileged user to make impro ... (51 characters truncated) ...  to already freed memory.This issue affects Bifrost GPU Kernel Driver: from r34p0 through r40p0; Valhall GPU Kernel Driver: from r34p0 through r40p0.', 7.8, 'CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H', 0.0, '', '"[{\\"source\\": \\"nvd@nist.gov\\", \\"type\\": \\"Primary\\", \\"description\\": [{\\"lang\\": \\"en\\", \\"value\\": \\"CWE-416\\"}]}, {\\"source\\": \\"arm-security@arm.com\\", \\"type\\": \\"Secondary\\", \\"description\\": [{\\"lang\\": \\"en\\", \\"value\\": \\"CWE-416\\"}]}]"', '"[{\\"nodes\\": [{\\"operator\\": \\"OR\\", \\"negate\\": false, \\"cpeMatch\\": [{\\"vulnerable\\": true, \\"criteria\\": \\"cpe:2.3:a:arm:bifrost_g ... (296 characters truncated) ... rsionStartIncluding\\": \\"r34p0\\", \\"versionEndExcluding\\": \\"r41p0\\", \\"matchCriteriaId\\": \\"6E75A7C6-352F-45D8-8E34-E64B39D173DA\\"}]}]}]"', '"[{\\"url\\": \\"https://developer.arm.com/Arm%20Security%20Center/Mali%20GPU%20Driver%20Vulnerabilities\\", \\"source\\": \\"arm-security@arm.com\\", \\"tags\\": [\\"Vendor Advisory\\"]}]"', '["Linux"]', '["all_versions"]', 'Arm Ltd', '"[\\"Bifrost GPU Kernel Driver\\", \\"Valhall GPU Kernel Driver\\"]"', '["r34p0 to r40p0", "r34p0 to r40p0"]', '"[\\"driver\\", \\"driver\\"]"', 'client', None, None, '{"AV": {"value": "L", "assessment": "Appropriate", "llm_value": "", "remarks": "The vulnerability allows a local non-privileged user to exploit the i ... (928 characters truncated) ... rability does not affect the security of other components, as it is scoped to the vulnerable component itself.", "Justification": "cve_description"}}', '{"contexts": [{"environment": "Client-side on devices using Arm Mali GPUs with affected drivers", "explanation": "The vulnerability is specifically r ... (794 characters truncated) ... er Free, allows local users to manipulate GPU memory, which is typically not accessible in server-side contexts or on systems with patched drivers."}', False, 'null', '{"recommendations": ["Limit access to the GPU resources to trusted users only.", "Implement strict memory management practices to prevent use-after-f ... (1454 characters truncated) ...  associated with GPU memory management.", "Implement a comprehensive monitoring solution to detect and respond to potential exploitation attempts."]}', datetime.datetime(2024, 11, 4, 13, 47, 36, 533991))
-2024-11-04 14:47:36,566 - INFO - COMMIT
+2024-11-11 19:29:54,935 - INFO - [generated in 0.00255s] ('CVE-2024-51746',)
+2024-11-11 19:29:55,049 - INFO - ROLLBACK
+2024-11-11 19:29:55,055 - INFO - BEGIN (implicit)
+2024-11-11 19:29:55,056 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:55,058 - INFO - [cached since 0.126s ago] ('CVE-2024-51740',)
+2024-11-11 19:29:55,170 - INFO - ROLLBACK
+2024-11-11 19:29:55,175 - INFO - BEGIN (implicit)
+2024-11-11 19:29:55,176 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:55,178 - INFO - [cached since 0.246s ago] ('CVE-2024-51735',)
+2024-11-11 19:29:55,291 - INFO - ROLLBACK
+2024-11-11 19:29:55,296 - INFO - BEGIN (implicit)
+2024-11-11 19:29:55,297 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:55,299 - INFO - [cached since 0.3667s ago] ('CVE-2024-51493',)
+2024-11-11 19:29:55,413 - INFO - ROLLBACK
+2024-11-11 19:29:55,418 - INFO - BEGIN (implicit)
+2024-11-11 19:29:55,418 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:55,421 - INFO - [cached since 0.4887s ago] ('CVE-2024-51382',)
+2024-11-11 19:29:55,534 - INFO - ROLLBACK
+2024-11-11 19:29:55,540 - INFO - BEGIN (implicit)
+2024-11-11 19:29:55,541 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:55,543 - INFO - [cached since 0.6105s ago] ('CVE-2024-51381',)
+2024-11-11 19:29:55,655 - INFO - ROLLBACK
+2024-11-11 19:29:55,660 - INFO - BEGIN (implicit)
+2024-11-11 19:29:55,661 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:55,664 - INFO - [cached since 0.731s ago] ('CVE-2024-51380',)
+2024-11-11 19:29:55,774 - INFO - ROLLBACK
+2024-11-11 19:29:55,779 - INFO - BEGIN (implicit)
+2024-11-11 19:29:55,780 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:55,783 - INFO - [cached since 0.8495s ago] ('CVE-2024-51379',)
+2024-11-11 19:29:55,977 - INFO - ROLLBACK
+2024-11-11 19:29:55,983 - INFO - BEGIN (implicit)
+2024-11-11 19:29:55,984 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:55,986 - INFO - [cached since 1.053s ago] ('CVE-2024-51240',)
+2024-11-11 19:29:56,098 - INFO - ROLLBACK
+2024-11-11 19:29:56,103 - INFO - BEGIN (implicit)
+2024-11-11 19:29:56,104 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:56,107 - INFO - [cached since 1.174s ago] ('CVE-2024-50335',)
+2024-11-11 19:29:56,219 - INFO - ROLLBACK
+2024-11-11 19:29:56,224 - INFO - BEGIN (implicit)
+2024-11-11 19:29:56,225 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:56,227 - INFO - [cached since 1.295s ago] ('CVE-2024-50333',)
+2024-11-11 19:29:56,339 - INFO - ROLLBACK
+2024-11-11 19:29:56,344 - INFO - BEGIN (implicit)
+2024-11-11 19:29:56,345 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:56,347 - INFO - [cached since 1.415s ago] ('CVE-2024-50332',)
+2024-11-11 19:29:56,459 - INFO - ROLLBACK
+2024-11-11 19:29:56,463 - INFO - BEGIN (implicit)
+2024-11-11 19:29:56,464 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:56,466 - INFO - [cached since 1.534s ago] ('CVE-2024-49774',)
+2024-11-11 19:29:56,578 - INFO - ROLLBACK
+2024-11-11 19:29:56,583 - INFO - BEGIN (implicit)
+2024-11-11 19:29:56,584 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:56,586 - INFO - [cached since 1.654s ago] ('CVE-2024-49773',)
+2024-11-11 19:29:56,698 - INFO - ROLLBACK
+2024-11-11 19:29:56,703 - INFO - BEGIN (implicit)
+2024-11-11 19:29:56,704 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:56,706 - INFO - [cached since 1.774s ago] ('CVE-2024-49772',)
+2024-11-11 19:29:56,815 - INFO - ROLLBACK
+2024-11-11 19:29:56,819 - INFO - BEGIN (implicit)
+2024-11-11 19:29:56,820 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:56,822 - INFO - [cached since 1.89s ago] ('CVE-2024-49377',)
+2024-11-11 19:29:56,936 - INFO - ROLLBACK
+2024-11-11 19:29:56,940 - INFO - BEGIN (implicit)
+2024-11-11 19:29:56,941 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:56,943 - INFO - [cached since 2.011s ago] ('CVE-2024-0134',)
+2024-11-11 19:29:57,054 - INFO - ROLLBACK
+2024-11-11 19:29:57,059 - INFO - BEGIN (implicit)
+2024-11-11 19:29:57,060 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:57,062 - INFO - [cached since 2.129s ago] ('CVE-2024-51739',)
+2024-11-11 19:29:57,176 - INFO - ROLLBACK
+2024-11-11 19:29:57,181 - INFO - BEGIN (implicit)
+2024-11-11 19:29:57,182 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:57,184 - INFO - [cached since 2.251s ago] ('CVE-2024-50138',)
+2024-11-11 19:29:57,293 - INFO - ROLLBACK
+2024-11-11 19:29:57,298 - INFO - BEGIN (implicit)
+2024-11-11 19:29:57,299 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:57,301 - INFO - [cached since 2.369s ago] ('CVE-2024-50137',)
+2024-11-11 19:29:57,510 - INFO - ROLLBACK
+2024-11-11 19:29:57,514 - INFO - BEGIN (implicit)
+2024-11-11 19:29:57,515 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:57,517 - INFO - [cached since 2.585s ago] ('CVE-2024-51024',)
+2024-11-11 19:29:57,630 - INFO - ROLLBACK
+2024-11-11 19:29:57,635 - INFO - BEGIN (implicit)
+2024-11-11 19:29:57,635 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:57,638 - INFO - [cached since 2.705s ago] ('CVE-2024-51023',)
+2024-11-11 19:29:57,747 - INFO - ROLLBACK
+2024-11-11 19:29:57,752 - INFO - BEGIN (implicit)
+2024-11-11 19:29:57,753 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:57,755 - INFO - [cached since 2.823s ago] ('CVE-2024-51022',)
+2024-11-11 19:29:57,862 - INFO - ROLLBACK
+2024-11-11 19:29:57,867 - INFO - BEGIN (implicit)
+2024-11-11 19:29:57,868 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:57,870 - INFO - [cached since 2.938s ago] ('CVE-2024-9579',)
+2024-11-11 19:29:57,981 - INFO - ROLLBACK
+2024-11-11 19:29:57,986 - INFO - BEGIN (implicit)
+2024-11-11 19:29:57,987 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:57,989 - INFO - [cached since 3.056s ago] ('CVE-2024-51021',)
+2024-11-11 19:29:58,094 - INFO - ROLLBACK
+2024-11-11 19:29:58,099 - INFO - BEGIN (implicit)
+2024-11-11 19:29:58,100 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:58,102 - INFO - [cached since 3.17s ago] ('CVE-2024-51020',)
+2024-11-11 19:29:58,211 - INFO - ROLLBACK
+2024-11-11 19:29:58,216 - INFO - BEGIN (implicit)
+2024-11-11 19:29:58,217 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:58,219 - INFO - [cached since 3.286s ago] ('CVE-2024-51019',)
+2024-11-11 19:29:58,328 - INFO - ROLLBACK
+2024-11-11 19:29:58,333 - INFO - BEGIN (implicit)
+2024-11-11 19:29:58,334 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:58,336 - INFO - [cached since 3.403s ago] ('CVE-2024-50136',)
+2024-11-11 19:29:58,442 - INFO - ROLLBACK
+2024-11-11 19:29:58,447 - INFO - BEGIN (implicit)
+2024-11-11 19:29:58,448 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:58,450 - INFO - [cached since 3.518s ago] ('CVE-2024-50135',)
+2024-11-11 19:29:58,564 - INFO - ROLLBACK
+2024-11-11 19:29:58,569 - INFO - BEGIN (implicit)
+2024-11-11 19:29:58,570 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:58,572 - INFO - [cached since 3.639s ago] ('CVE-2024-50134',)
+2024-11-11 19:29:58,686 - INFO - ROLLBACK
+2024-11-11 19:29:58,691 - INFO - BEGIN (implicit)
+2024-11-11 19:29:58,692 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:58,695 - INFO - [cached since 3.762s ago] ('CVE-2024-50133',)
+2024-11-11 19:29:58,810 - INFO - ROLLBACK
+2024-11-11 19:29:58,815 - INFO - BEGIN (implicit)
+2024-11-11 19:29:58,816 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:58,818 - INFO - [cached since 3.886s ago] ('CVE-2024-50132',)
+2024-11-11 19:29:58,929 - INFO - ROLLBACK
+2024-11-11 19:29:58,934 - INFO - BEGIN (implicit)
+2024-11-11 19:29:58,935 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:58,938 - INFO - [cached since 4.005s ago] ('CVE-2024-50131',)
+2024-11-11 19:29:59,046 - INFO - ROLLBACK
+2024-11-11 19:29:59,050 - INFO - BEGIN (implicit)
+2024-11-11 19:29:59,051 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:59,054 - INFO - [cached since 4.121s ago] ('CVE-2024-50130',)
+2024-11-11 19:29:59,202 - INFO - ROLLBACK
+2024-11-11 19:29:59,212 - INFO - BEGIN (implicit)
+2024-11-11 19:29:59,213 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:59,215 - INFO - [cached since 4.282s ago] ('CVE-2024-50129',)
+2024-11-11 19:29:59,326 - INFO - ROLLBACK
+2024-11-11 19:29:59,331 - INFO - BEGIN (implicit)
+2024-11-11 19:29:59,332 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:59,334 - INFO - [cached since 4.401s ago] ('CVE-2024-50128',)
+2024-11-11 19:29:59,442 - INFO - ROLLBACK
+2024-11-11 19:29:59,447 - INFO - BEGIN (implicit)
+2024-11-11 19:29:59,448 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:59,450 - INFO - [cached since 4.517s ago] ('CVE-2024-50127',)
+2024-11-11 19:29:59,562 - INFO - ROLLBACK
+2024-11-11 19:29:59,567 - INFO - BEGIN (implicit)
+2024-11-11 19:29:59,568 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:59,570 - INFO - [cached since 4.638s ago] ('CVE-2024-50126',)
+2024-11-11 19:29:59,684 - INFO - ROLLBACK
+2024-11-11 19:29:59,690 - INFO - BEGIN (implicit)
+2024-11-11 19:29:59,691 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:59,693 - INFO - [cached since 4.76s ago] ('CVE-2024-50125',)
+2024-11-11 19:29:59,805 - INFO - ROLLBACK
+2024-11-11 19:29:59,810 - INFO - BEGIN (implicit)
+2024-11-11 19:29:59,811 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:59,813 - INFO - [cached since 4.88s ago] ('CVE-2024-50124',)
+2024-11-11 19:29:59,924 - INFO - ROLLBACK
+2024-11-11 19:29:59,929 - INFO - BEGIN (implicit)
+2024-11-11 19:29:59,930 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:29:59,932 - INFO - [cached since 5s ago] ('CVE-2024-50123',)
+2024-11-11 19:30:00,041 - INFO - ROLLBACK
+2024-11-11 19:30:00,045 - INFO - BEGIN (implicit)
+2024-11-11 19:30:00,046 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:00,048 - INFO - [cached since 5.116s ago] ('CVE-2024-50122',)
+2024-11-11 19:30:00,159 - INFO - ROLLBACK
+2024-11-11 19:30:00,164 - INFO - BEGIN (implicit)
+2024-11-11 19:30:00,165 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:00,167 - INFO - [cached since 5.234s ago] ('CVE-2024-50121',)
+2024-11-11 19:30:00,276 - INFO - ROLLBACK
+2024-11-11 19:30:00,279 - INFO - BEGIN (implicit)
+2024-11-11 19:30:00,280 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:00,282 - INFO - [cached since 5.35s ago] ('CVE-2024-50120',)
+2024-11-11 19:30:00,396 - INFO - ROLLBACK
+2024-11-11 19:30:00,401 - INFO - BEGIN (implicit)
+2024-11-11 19:30:00,402 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:00,404 - INFO - [cached since 5.471s ago] ('CVE-2024-50119',)
+2024-11-11 19:30:00,515 - INFO - ROLLBACK
+2024-11-11 19:30:00,521 - INFO - BEGIN (implicit)
+2024-11-11 19:30:00,521 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:00,524 - INFO - [cached since 5.591s ago] ('CVE-2024-50118',)
+2024-11-11 19:30:00,635 - INFO - ROLLBACK
+2024-11-11 19:30:00,640 - INFO - BEGIN (implicit)
+2024-11-11 19:30:00,641 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:00,643 - INFO - [cached since 5.71s ago] ('CVE-2024-50117',)
+2024-11-11 19:30:00,755 - INFO - ROLLBACK
+2024-11-11 19:30:00,760 - INFO - BEGIN (implicit)
+2024-11-11 19:30:00,761 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:00,763 - INFO - [cached since 5.831s ago] ('CVE-2024-50116',)
+2024-11-11 19:30:00,873 - INFO - ROLLBACK
+2024-11-11 19:30:00,878 - INFO - BEGIN (implicit)
+2024-11-11 19:30:00,879 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:00,881 - INFO - [cached since 5.948s ago] ('CVE-2024-50115',)
+2024-11-11 19:30:00,995 - INFO - ROLLBACK
+2024-11-11 19:30:01,000 - INFO - BEGIN (implicit)
+2024-11-11 19:30:01,000 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:01,003 - INFO - [cached since 6.07s ago] ('CVE-2024-50114',)
+2024-11-11 19:30:01,110 - INFO - ROLLBACK
+2024-11-11 19:30:01,114 - INFO - BEGIN (implicit)
+2024-11-11 19:30:01,115 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:01,117 - INFO - [cached since 6.185s ago] ('CVE-2024-50113',)
+2024-11-11 19:30:01,226 - INFO - ROLLBACK
+2024-11-11 19:30:01,230 - INFO - BEGIN (implicit)
+2024-11-11 19:30:01,231 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:01,234 - INFO - [cached since 6.301s ago] ('CVE-2024-50112',)
+2024-11-11 19:30:01,345 - INFO - ROLLBACK
+2024-11-11 19:30:01,350 - INFO - BEGIN (implicit)
+2024-11-11 19:30:01,350 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:01,353 - INFO - [cached since 6.42s ago] ('CVE-2024-50111',)
+2024-11-11 19:30:01,459 - INFO - ROLLBACK
+2024-11-11 19:30:01,464 - INFO - BEGIN (implicit)
+2024-11-11 19:30:01,465 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:01,467 - INFO - [cached since 6.535s ago] ('CVE-2024-50110',)
+2024-11-11 19:30:01,579 - INFO - ROLLBACK
+2024-11-11 19:30:01,584 - INFO - BEGIN (implicit)
+2024-11-11 19:30:01,585 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:01,587 - INFO - [cached since 6.654s ago] ('CVE-2024-50109',)
+2024-11-11 19:30:01,699 - INFO - ROLLBACK
+2024-11-11 19:30:01,704 - INFO - BEGIN (implicit)
+2024-11-11 19:30:01,705 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:01,708 - INFO - [cached since 6.775s ago] ('CVE-2024-50108',)
+2024-11-11 19:30:01,817 - INFO - ROLLBACK
+2024-11-11 19:30:01,822 - INFO - BEGIN (implicit)
+2024-11-11 19:30:01,823 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:01,825 - INFO - [cached since 6.893s ago] ('CVE-2024-50107',)
+2024-11-11 19:30:01,939 - INFO - ROLLBACK
+2024-11-11 19:30:01,944 - INFO - BEGIN (implicit)
+2024-11-11 19:30:01,944 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:01,947 - INFO - [cached since 7.014s ago] ('CVE-2024-50106',)
+2024-11-11 19:30:02,058 - INFO - ROLLBACK
+2024-11-11 19:30:02,063 - INFO - BEGIN (implicit)
+2024-11-11 19:30:02,064 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:02,067 - INFO - [cached since 7.134s ago] ('CVE-2024-50105',)
+2024-11-11 19:30:02,182 - INFO - ROLLBACK
+2024-11-11 19:30:02,186 - INFO - BEGIN (implicit)
+2024-11-11 19:30:02,187 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:02,189 - INFO - [cached since 7.257s ago] ('CVE-2024-50104',)
+2024-11-11 19:30:02,305 - INFO - ROLLBACK
+2024-11-11 19:30:02,310 - INFO - BEGIN (implicit)
+2024-11-11 19:30:02,311 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:02,314 - INFO - [cached since 7.381s ago] ('CVE-2024-50103',)
+2024-11-11 19:30:02,424 - INFO - ROLLBACK
+2024-11-11 19:30:02,429 - INFO - BEGIN (implicit)
+2024-11-11 19:30:02,430 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:02,432 - INFO - [cached since 7.5s ago] ('CVE-2024-50102',)
+2024-11-11 19:30:02,544 - INFO - ROLLBACK
+2024-11-11 19:30:02,549 - INFO - BEGIN (implicit)
+2024-11-11 19:30:02,550 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:02,552 - INFO - [cached since 7.62s ago] ('CVE-2024-50101',)
+2024-11-11 19:30:02,659 - INFO - ROLLBACK
+2024-11-11 19:30:02,664 - INFO - BEGIN (implicit)
+2024-11-11 19:30:02,664 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:02,667 - INFO - [cached since 7.734s ago] ('CVE-2024-50100',)
+2024-11-11 19:30:02,806 - INFO - ROLLBACK
+2024-11-11 19:30:02,811 - INFO - BEGIN (implicit)
+2024-11-11 19:30:02,812 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:02,814 - INFO - [cached since 7.881s ago] ('CVE-2024-50099',)
+2024-11-11 19:30:02,938 - INFO - ROLLBACK
+2024-11-11 19:30:02,943 - INFO - BEGIN (implicit)
+2024-11-11 19:30:02,944 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:02,946 - INFO - [cached since 8.014s ago] ('CVE-2024-50098',)
+2024-11-11 19:30:03,057 - INFO - ROLLBACK
+2024-11-11 19:30:03,062 - INFO - BEGIN (implicit)
+2024-11-11 19:30:03,063 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:03,065 - INFO - [cached since 8.132s ago] ('CVE-2024-50097',)
+2024-11-11 19:30:03,177 - INFO - ROLLBACK
+2024-11-11 19:30:03,182 - INFO - BEGIN (implicit)
+2024-11-11 19:30:03,182 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:03,185 - INFO - [cached since 8.252s ago] ('CVE-2024-50096',)
+2024-11-11 19:30:03,296 - INFO - ROLLBACK
+2024-11-11 19:30:03,301 - INFO - BEGIN (implicit)
+2024-11-11 19:30:03,302 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:03,304 - INFO - [cached since 8.372s ago] ('CVE-2024-50095',)
+2024-11-11 19:30:03,416 - INFO - ROLLBACK
+2024-11-11 19:30:03,420 - INFO - BEGIN (implicit)
+2024-11-11 19:30:03,421 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:03,423 - INFO - [cached since 8.491s ago] ('CVE-2024-51362',)
+2024-11-11 19:30:03,534 - INFO - ROLLBACK
+2024-11-11 19:30:03,539 - INFO - BEGIN (implicit)
+2024-11-11 19:30:03,540 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:03,542 - INFO - [cached since 8.609s ago] ('CVE-2024-51132',)
+2024-11-11 19:30:03,654 - INFO - ROLLBACK
+2024-11-11 19:30:03,659 - INFO - BEGIN (implicit)
+2024-11-11 19:30:03,660 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:03,662 - INFO - [cached since 8.73s ago] ('CVE-2024-50094',)
+2024-11-11 19:30:03,777 - INFO - ROLLBACK
+2024-11-11 19:30:03,782 - INFO - BEGIN (implicit)
+2024-11-11 19:30:03,783 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:03,785 - INFO - [cached since 8.853s ago] ('CVE-2024-50093',)
+2024-11-11 19:30:03,900 - INFO - ROLLBACK
+2024-11-11 19:30:03,905 - INFO - BEGIN (implicit)
+2024-11-11 19:30:03,905 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:03,908 - INFO - [cached since 8.975s ago] ('CVE-2024-50092',)
+2024-11-11 19:30:04,014 - INFO - ROLLBACK
+2024-11-11 19:30:04,019 - INFO - BEGIN (implicit)
+2024-11-11 19:30:04,020 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:04,022 - INFO - [cached since 9.09s ago] ('CVE-2024-50091',)
+2024-11-11 19:30:04,134 - INFO - ROLLBACK
+2024-11-11 19:30:04,139 - INFO - BEGIN (implicit)
+2024-11-11 19:30:04,140 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:04,142 - INFO - [cached since 9.21s ago] ('CVE-2024-50090',)
+2024-11-11 19:30:04,253 - INFO - ROLLBACK
+2024-11-11 19:30:04,257 - INFO - BEGIN (implicit)
+2024-11-11 19:30:04,258 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:30:04,261 - INFO - [cached since 9.328s ago] ('CVE-2024-50089',)
+2024-11-11 19:30:37,973 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-11-11 19:30:37,974 - INFO - Retrying request to /chat/completions in 0.396433 seconds
+2024-11-11 19:30:57,800 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-11-11 19:30:57,801 - INFO - Retrying request to /chat/completions in 0.979938 seconds
+2024-11-11 19:31:25,708 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-11-11 19:31:50,502 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-11-11 19:31:50,503 - INFO - Retrying request to /chat/completions in 0.476611 seconds
+2024-11-11 19:32:11,401 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-11-11 19:32:11,402 - INFO - Retrying request to /chat/completions in 0.792596 seconds
+2024-11-11 19:32:31,882 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-11-11 19:32:51,598 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-11-11 19:32:51,598 - INFO - Retrying request to /chat/completions in 0.421180 seconds
+2024-11-11 19:33:11,616 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-11-11 19:33:11,617 - INFO - Retrying request to /chat/completions in 0.761426 seconds
+2024-11-11 19:33:30,529 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-11-11 19:33:48,929 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-11-11 19:33:48,930 - INFO - Retrying request to /chat/completions in 0.435763 seconds
+2024-11-11 19:34:10,611 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-11-11 19:34:10,612 - INFO - Retrying request to /chat/completions in 0.849821 seconds
+2024-11-11 19:34:29,594 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-11-11 19:34:34,596 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-11 19:34:34,634 - INFO - INSERT INTO cve_data (id, cve_id, source_identifier, published, last_modified, vuln_status, description, cvss_score_v3, cvss_vector_v3, cvss_score_v2, cvss_vector_v2, weaknesses, configurations, "references", os_name, os_version, vendor_name, vulnerability_component_name, vulnerability_component_version, vulnerability_component_type, "Side", generated_cvss_vector, generated_cvss_score, exploitability_metrics, exploitation_context, patch_available, patch, mitigation_measures, latest_analysis_date) VALUES ($1::UUID, $2::VARCHAR, $3::VARCHAR, $4::TIMESTAMP WITHOUT TIME ZONE, $5::TIMESTAMP WITHOUT TIME ZONE, $6::VARCHAR, $7::VARCHAR, $8::FLOAT, $9::VARCHAR, $10::FLOAT, $11::VARCHAR, $12::JSON, $13::JSON, $14::JSON, $15::JSON, $16::JSON, $17::VARCHAR, $18::JSON, $19::JSON, $20::JSON, $21::VARCHAR, $22::VARCHAR, $23::FLOAT, $24::JSON, $25::JSON, $26::BOOLEAN, $27::JSON, $28::JSON, $29::TIMESTAMP WITHOUT TIME ZONE)
+2024-11-11 19:34:34,636 - INFO - [generated in 0.00298s] (UUID('239d6c9b-40cd-49f4-acf7-2df15e49de75'), 'CVE-2024-50089', '416baaa9-dc9f-4396-8d5f-8c081fb06d67', datetime.datetime(2024, 11, 5, 17, 15, 6, 410000), datetime.datetime(2024, 11, 5, 17, 15, 6, 410000), 'Received', "In the Linux kernel, the following vulnerability has been resolved:\n\nunicode: Don't special case ignorable code points\n\nWe don't need to handle them separately. Instead, just let them\ndecompose/casefold to themselves.", 0.0, '', 0.0, '', '"[]"', '"[]"', '"[{\\"url\\": \\"https://git.kernel.org/stable/c/21526498d25e54bda3c650f756493d63fd9131b7\\", \\"source\\": \\"416baaa9-dc9f-4396-8d5f-8c081fb06d67\\ ... (610 characters truncated) ... \"url\\": \\"https://git.kernel.org/stable/c/ac20736861f3c9c8e0a78273a4c57e9bcb0d8cc6\\", \\"source\\": \\"416baaa9-dc9f-4396-8d5f-8c081fb06d67\\"}]"', 'null', 'null', None, 'null', 'null', 'null', None, 'CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N', 0.0, 'null', 'null', False, 'null', 'null', datetime.datetime(2024, 11, 11, 18, 34, 34, 628648))
+2024-11-11 19:34:34,656 - INFO - COMMIT
+2024-11-11 19:34:34,796 - INFO - BEGIN (implicit)
+2024-11-11 19:34:34,797 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:34:34,800 - INFO - [cached since 279.9s ago] ('CVE-2024-49522',)
+2024-11-11 19:34:34,911 - INFO - ROLLBACK
+2024-11-11 19:34:34,916 - INFO - BEGIN (implicit)
+2024-11-11 19:34:34,916 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:34:34,919 - INFO - [cached since 280s ago] ('CVE-2024-48312',)
+2024-11-11 19:34:35,034 - INFO - ROLLBACK
+2024-11-11 19:34:35,039 - INFO - BEGIN (implicit)
+2024-11-11 19:34:35,040 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:34:35,042 - INFO - [cached since 280.1s ago] ('CVE-2023-29126',)
+2024-11-11 19:34:35,155 - INFO - ROLLBACK
+2024-11-11 19:34:35,160 - INFO - BEGIN (implicit)
+2024-11-11 19:34:35,161 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:34:35,163 - INFO - [cached since 280.2s ago] ('CVE-2023-29125',)
+2024-11-11 19:34:35,271 - INFO - ROLLBACK
+2024-11-11 19:34:35,275 - INFO - BEGIN (implicit)
+2024-11-11 19:34:35,276 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:34:35,279 - INFO - [cached since 280.3s ago] ('CVE-2023-29122',)
+2024-11-11 19:34:35,388 - INFO - ROLLBACK
+2024-11-11 19:34:35,393 - INFO - BEGIN (implicit)
+2024-11-11 19:34:35,394 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:34:35,396 - INFO - [cached since 280.5s ago] ('CVE-2023-29121',)
+2024-11-11 19:34:35,507 - INFO - ROLLBACK
+2024-11-11 19:34:35,512 - INFO - BEGIN (implicit)
+2024-11-11 19:34:35,513 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:34:35,515 - INFO - [cached since 280.6s ago] ('CVE-2023-29120',)
+2024-11-11 19:34:35,623 - INFO - ROLLBACK
+2024-11-11 19:34:35,628 - INFO - BEGIN (implicit)
+2024-11-11 19:34:35,628 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:34:35,630 - INFO - [cached since 280.7s ago] ('CVE-2023-29119',)
+2024-11-11 19:34:35,746 - INFO - ROLLBACK
+2024-11-11 19:34:35,751 - INFO - BEGIN (implicit)
+2024-11-11 19:34:35,751 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:34:35,754 - INFO - [cached since 280.8s ago] ('CVE-2023-29118',)
+2024-11-11 19:34:35,876 - INFO - ROLLBACK
+2024-11-11 19:34:35,880 - INFO - BEGIN (implicit)
+2024-11-11 19:34:35,881 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:34:35,884 - INFO - [cached since 281s ago] ('CVE-2023-29117',)
+2024-11-11 19:34:36,006 - INFO - ROLLBACK
+2024-11-11 19:34:36,012 - INFO - BEGIN (implicit)
+2024-11-11 19:34:36,013 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:34:36,015 - INFO - [cached since 281.1s ago] ('CVE-2023-29116',)
+2024-11-11 19:34:36,168 - INFO - ROLLBACK
+2024-11-11 19:34:36,173 - INFO - BEGIN (implicit)
+2024-11-11 19:34:36,174 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:34:36,176 - INFO - [cached since 281.2s ago] ('CVE-2024-52030',)
+2024-11-11 19:34:36,308 - INFO - ROLLBACK
+2024-11-11 19:34:36,312 - INFO - BEGIN (implicit)
+2024-11-11 19:34:36,313 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:34:36,316 - INFO - [cached since 281.4s ago] ('CVE-2024-52029',)
+2024-11-11 19:34:36,429 - INFO - ROLLBACK
+2024-11-11 19:34:36,434 - INFO - BEGIN (implicit)
+2024-11-11 19:34:36,435 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:34:36,437 - INFO - [cached since 281.5s ago] ('CVE-2024-52028',)
+2024-11-11 19:34:36,550 - INFO - ROLLBACK
+2024-11-11 19:34:36,555 - INFO - BEGIN (implicit)
+2024-11-11 19:34:36,556 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:34:36,558 - INFO - [cached since 281.6s ago] ('CVE-2024-52027',)
+2024-11-11 19:34:36,680 - ERROR - No data found for CVE ID CVE-2024-52027
+2024-11-11 19:34:36,681 - INFO - ROLLBACK
+2024-11-11 19:34:36,686 - INFO - BEGIN (implicit)
+2024-11-11 19:34:36,687 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:34:36,689 - INFO - [cached since 281.8s ago] ('CVE-2024-52026',)
+2024-11-11 19:34:36,797 - INFO - ROLLBACK
+2024-11-11 19:34:36,802 - INFO - BEGIN (implicit)
+2024-11-11 19:34:36,803 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:34:36,805 - INFO - [cached since 281.9s ago] ('CVE-2024-52025',)
+2024-11-11 19:34:36,981 - INFO - ROLLBACK
+2024-11-11 19:34:36,986 - INFO - BEGIN (implicit)
+2024-11-11 19:34:36,987 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:34:36,989 - INFO - [cached since 282.1s ago] ('CVE-2024-52024',)
+2024-11-11 19:34:37,104 - INFO - ROLLBACK
+2024-11-11 19:34:37,109 - INFO - BEGIN (implicit)
+2024-11-11 19:34:37,110 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:34:37,112 - INFO - [cached since 282.2s ago] ('CVE-2024-52023',)
+2024-11-11 19:34:37,220 - INFO - ROLLBACK
+2024-11-11 19:34:37,225 - INFO - BEGIN (implicit)
+2024-11-11 19:34:37,226 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:34:37,228 - INFO - [cached since 282.3s ago] ('CVE-2024-52022',)
+2024-11-11 19:34:37,339 - INFO - ROLLBACK
+2024-11-11 19:34:37,344 - INFO - BEGIN (implicit)
+2024-11-11 19:34:37,345 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:34:37,347 - INFO - [cached since 282.4s ago] ('CVE-2024-52021',)
+2024-11-11 19:34:37,454 - INFO - ROLLBACK
+2024-11-11 19:34:37,459 - INFO - BEGIN (implicit)
+2024-11-11 19:34:37,460 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:34:37,462 - INFO - [cached since 282.5s ago] ('CVE-2024-52020',)
+2024-11-11 19:34:37,574 - INFO - ROLLBACK
+2024-11-11 19:34:37,579 - INFO - BEGIN (implicit)
+2024-11-11 19:34:37,580 - INFO - SELECT cve_data.id, cve_data.cve_id, cve_data.source_identifier, cve_data.published, cve_data.last_modified, cve_data.vuln_status, cve_data.description, cve_data.cvss_score_v3, cve_data.cvss_vector_v3, cve_data.cvss_score_v2, cve_data.cvss_vector_v2, cve_data.weaknesses, cve_data.configurations, cve_data."references", cve_data.os_name, cve_data.os_version, cve_data.vendor_name, cve_data.vulnerability_component_name, cve_data.vulnerability_component_version, cve_data.vulnerability_component_type, cve_data."Side", cve_data.generated_cvss_vector, cve_data.generated_cvss_score, cve_data.exploitability_metrics, cve_data.exploitation_context, cve_data.patch_available, cve_data.patch, cve_data.mitigation_measures, cve_data.latest_analysis_date 
+FROM cve_data 
+WHERE cve_data.cve_id = $1::VARCHAR ORDER BY cve_data.latest_analysis_date DESC
+2024-11-11 19:34:37,582 - INFO - [cached since 282.7s ago] ('CVE-2024-52019',)
+2024-11-11 19:34:37,692 - INFO - ROLLBACK

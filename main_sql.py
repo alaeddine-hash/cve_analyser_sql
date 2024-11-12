@@ -55,7 +55,7 @@ def compare_versions(prev_version, current_version):
     fields_to_compare = [
         'source_identifier', 'published', 'last_modified', 'vuln_status',
         'description', 'cvss_score_v3', 'cvss_vector_v3',
-        'weaknesses', 'configurations', 'references', 'patch_available'
+        'weaknesses', 'configurations', 'references', 'os_name', 'vendor_name','patch_available'
     ]
 
     for field in fields_to_compare:

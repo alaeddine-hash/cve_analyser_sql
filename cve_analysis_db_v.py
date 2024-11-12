@@ -1,6 +1,7 @@
 from decimal import Decimal
 import json
 import logging
+import os
 import re
 import asyncio
 import copy
@@ -84,10 +85,11 @@ async def analyze_cve(cve_id: str, db: AsyncSession, last_modified_date_db=None)
     vulnerability_component_name = final_cve_entry.get("vulnerability_component_name")
     if isinstance(vulnerability_component_name, list):
         vulnerability_component_name = json.dumps(vulnerability_component_name)
-    
+
     vulnerability_component_type = final_cve_entry.get("vulnerability_component_type")
     if isinstance(vulnerability_component_type, list):
         vulnerability_component_type = json.dumps(vulnerability_component_type)
+
     # Inside your analyze_cve function, when saving the CVE data:
     new_cve = CVEModel(
     id=uuid.uuid4(),  # Use UUID for ID
@@ -132,6 +134,30 @@ async def analyze_cve(cve_id: str, db: AsyncSession, last_modified_date_db=None)
     
     db.add(new_cve)
     await db.commit()
+    # Save the final_cve_entry to a JSON file
+    json_file_path = 'cve_output_06_11.json'
+
+    try:
+        # If the file exists, load its content
+        if os.path.exists(json_file_path):
+            with open(json_file_path, 'r') as f:
+                existing_data = json.load(f)
+                if isinstance(existing_data, list):
+                    cve_list = existing_data
+                else:
+                    # If the existing data is not a list, wrap it in a list
+                    cve_list = [existing_data]
+        else:
+            cve_list = []
+
+        # Append the new CVE entry to the list
+        cve_list.append(final_cve_entry)
+
+        # Save the updated data back to the file
+        with open(json_file_path, 'w') as f:
+            json.dump(cve_list, f, indent=4, default=str)
+    except Exception as e:
+        print(f"Error saving to JSON file: {e}")
     
     return final_cve_entry, None
 

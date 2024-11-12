@@ -1,32 +1,47 @@
 CVE ID,Field,From Date,To Date,Old Value,New Value
 CVE-2023-42133,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2023-42133,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2023-42133,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,PAX
 CVE-2024-33578,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-33578,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-33578,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Lenovo
 CVE-2024-33579,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-33579,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-33579,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Lenovo
 CVE-2024-33580,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-33580,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-33580,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Lenovo
 CVE-2024-33581,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-33581,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-33581,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Lenovo
 CVE-2024-33582,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-33582,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-33582,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Lenovo
 CVE-2024-38365,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-38365,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-38365,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,btcsuite
 CVE-2024-39526,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-39526,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-39526,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Juniper Networks
 CVE-2024-39527,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-39527,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-39527,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Juniper Networks
 CVE-2024-39534,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-39534,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-39534,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Juniper Networks
 CVE-2024-39544,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-39544,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-39544,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Juniper Networks
 CVE-2024-39547,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-39547,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-39547,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Juniper Networks
 CVE-2024-39563,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-39563,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-39563,os_name,2024-10-11 00:00:00,2024-10-20 00:00:00,['Juniper Junos'],['Juniper Networks Junos']
+CVE-2024-39563,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Juniper Networks
 CVE-2024-4089,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-4089,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-4089,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Lenovo
 CVE-2024-4089,last_modified,2024-10-20 00:00:00,2024-10-23 21:11:50.903294,2024-10-15,2024-10-17
 CVE-2024-4089,vuln_status,2024-10-20 00:00:00,2024-10-23 21:11:50.903294,Awaiting Analysis,Analyzed
 CVE-2024-4089,weaknesses,2024-10-20 00:00:00,2024-10-23 21:11:50.903294,"[{""source"": ""psirt@lenovo.com"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-427""}]}]","[{""source"": ""nvd@nist.gov"", ""type"": ""Primary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-427""}]}, {""source"": ""psirt@lenovo.com"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-427""}]}]"
@@ -34,6 +49,7 @@ CVE-2024-4089,configurations,2024-10-20 00:00:00,2024-10-23 21:11:50.903294,[],"
 CVE-2024-4089,references,2024-10-20 00:00:00,2024-10-23 21:11:50.903294,"[{""url"": ""https://iknow.lenovo.com.cn/detail/423563"", ""source"": ""psirt@lenovo.com""}]","[{""url"": ""https://iknow.lenovo.com.cn/detail/423563"", ""source"": ""psirt@lenovo.com"", ""tags"": [""Vendor Advisory""]}]"
 CVE-2024-4130,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-4130,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-4130,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Lenovo
 CVE-2024-4130,last_modified,2024-10-20 00:00:00,2024-10-23 21:11:36.808535,2024-10-15,2024-10-17
 CVE-2024-4130,vuln_status,2024-10-20 00:00:00,2024-10-23 21:11:36.808535,Awaiting Analysis,Analyzed
 CVE-2024-4130,weaknesses,2024-10-20 00:00:00,2024-10-23 21:11:36.808535,"[{""source"": ""psirt@lenovo.com"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-427""}]}]","[{""source"": ""nvd@nist.gov"", ""type"": ""Primary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-427""}]}, {""source"": ""psirt@lenovo.com"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-427""}]}]"
@@ -41,6 +57,7 @@ CVE-2024-4130,configurations,2024-10-20 00:00:00,2024-10-23 21:11:36.808535,[],"
 CVE-2024-4130,references,2024-10-20 00:00:00,2024-10-23 21:11:36.808535,"[{""url"": ""https://iknow.lenovo.com.cn/detail/423563"", ""source"": ""psirt@lenovo.com""}]","[{""url"": ""https://iknow.lenovo.com.cn/detail/423563"", ""source"": ""psirt@lenovo.com"", ""tags"": [""Vendor Advisory""]}]"
 CVE-2024-4131,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-4131,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-4131,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Lenovo
 CVE-2024-4131,last_modified,2024-10-20 00:00:00,2024-10-23 21:11:17.233018,2024-10-15,2024-10-17
 CVE-2024-4131,vuln_status,2024-10-20 00:00:00,2024-10-23 21:11:17.233018,Awaiting Analysis,Analyzed
 CVE-2024-4131,weaknesses,2024-10-20 00:00:00,2024-10-23 21:11:17.233018,"[{""source"": ""psirt@lenovo.com"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-427""}]}]","[{""source"": ""nvd@nist.gov"", ""type"": ""Primary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-427""}]}, {""source"": ""psirt@lenovo.com"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-427""}]}]"
@@ -48,6 +65,7 @@ CVE-2024-4131,configurations,2024-10-20 00:00:00,2024-10-23 21:11:17.233018,[],"
 CVE-2024-4131,references,2024-10-20 00:00:00,2024-10-23 21:11:17.233018,"[{""url"": ""https://iknow.lenovo.com.cn/detail/423563"", ""source"": ""psirt@lenovo.com""}]","[{""url"": ""https://iknow.lenovo.com.cn/detail/423563"", ""source"": ""psirt@lenovo.com"", ""tags"": [""Vendor Advisory""]}]"
 CVE-2024-4132,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-4132,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-4132,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Lenovo
 CVE-2024-4132,last_modified,2024-10-20 00:00:00,2024-10-23 21:11:01.584578,2024-10-15,2024-10-17
 CVE-2024-4132,vuln_status,2024-10-20 00:00:00,2024-10-23 21:11:01.584578,Awaiting Analysis,Analyzed
 CVE-2024-4132,weaknesses,2024-10-20 00:00:00,2024-10-23 21:11:01.584578,"[{""source"": ""psirt@lenovo.com"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-427""}]}]","[{""source"": ""nvd@nist.gov"", ""type"": ""Primary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-427""}]}, {""source"": ""psirt@lenovo.com"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-427""}]}]"
@@ -55,41 +73,63 @@ CVE-2024-4132,configurations,2024-10-20 00:00:00,2024-10-23 21:11:01.584578,[],"
 CVE-2024-4132,references,2024-10-20 00:00:00,2024-10-23 21:11:01.584578,"[{""url"": ""https://iknow.lenovo.com.cn/detail/423563"", ""source"": ""psirt@lenovo.com""}]","[{""url"": ""https://iknow.lenovo.com.cn/detail/423563"", ""source"": ""psirt@lenovo.com"", ""tags"": [""Vendor Advisory""]}]"
 CVE-2024-42018,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-42018,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-42018,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Atos Eviden
 CVE-2024-42640,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-42640,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
 CVE-2024-42640,cvss_score_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,0.0,9.8
 CVE-2024-42640,cvss_vector_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 CVE-2024-42640,weaknesses,2024-10-11 00:00:00,2024-10-20 00:00:00,[],"[{""source"": ""134c704f-9b21-4f2e-91b3-4a467353bcc0"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-434""}]}]"
+CVE-2024-42640,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Adones Pitogo
 CVE-2024-44157,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-44157,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Undergoing Analysis
+CVE-2024-44157,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Apple
+CVE-2024-44157,last_modified,2024-10-20 00:00:00,2024-11-05 11:00:37.825069,2024-10-15,2024-10-27
+CVE-2024-44157,vuln_status,2024-10-20 00:00:00,2024-11-05 11:00:37.825069,Undergoing Analysis,Awaiting Analysis
+CVE-2024-44157,cvss_score_v3,2024-10-20 00:00:00,2024-11-05 11:00:37.825069,0.0,5.5
+CVE-2024-44157,cvss_vector_v3,2024-10-20 00:00:00,2024-11-05 11:00:37.825069,,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+CVE-2024-44157,weaknesses,2024-10-20 00:00:00,2024-11-05 11:00:37.825069,[],"[{""source"": ""134c704f-9b21-4f2e-91b3-4a467353bcc0"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-120""}]}]"
 CVE-2024-44413,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-44413,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
 CVE-2024-44413,cvss_score_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,0.0,8.8
 CVE-2024-44413,cvss_vector_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,,CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 CVE-2024-44413,weaknesses,2024-10-11 00:00:00,2024-10-20 00:00:00,[],"[{""source"": ""134c704f-9b21-4f2e-91b3-4a467353bcc0"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-77""}]}]"
+CVE-2024-44413,os_name,2024-10-11 00:00:00,2024-10-20 00:00:00,"['Windows', 'Linux', 'macOS']",['null']
+CVE-2024-44413,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,D-Link
 CVE-2024-44414,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-44414,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-44414,os_name,2024-10-11 00:00:00,2024-10-20 00:00:00,['WAYOS'],['null']
+CVE-2024-44414,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,null
 CVE-2024-44415,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-44415,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
 CVE-2024-44415,cvss_score_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,0.0,6.5
 CVE-2024-44415,cvss_vector_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,,CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
 CVE-2024-44415,weaknesses,2024-10-11 00:00:00,2024-10-20 00:00:00,[],"[{""source"": ""134c704f-9b21-4f2e-91b3-4a467353bcc0"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-120""}]}]"
+CVE-2024-44415,os_name,2024-10-11 00:00:00,2024-10-20 00:00:00,"['Linux', 'Windows']",['null']
+CVE-2024-44415,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,D-Link
 CVE-2024-44729,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-44729,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-44729,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,MiroTalk
 CVE-2024-44729,last_modified,2024-10-20 00:00:00,2024-10-23 21:13:01.077900,2024-10-15,2024-10-16
 CVE-2024-44729,cvss_score_v3,2024-10-20 00:00:00,2024-10-23 21:13:01.077900,0.0,7.5
 CVE-2024-44729,cvss_vector_v3,2024-10-20 00:00:00,2024-10-23 21:13:01.077900,,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
 CVE-2024-44729,weaknesses,2024-10-20 00:00:00,2024-10-23 21:13:01.077900,[],"[{""source"": ""134c704f-9b21-4f2e-91b3-4a467353bcc0"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-732""}]}]"
 CVE-2024-44730,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-44730,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-44730,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,MiroTalk
 CVE-2024-44730,last_modified,2024-10-20 00:00:00,2024-10-23 21:12:39.610965,2024-10-15,2024-10-16
 CVE-2024-44730,cvss_score_v3,2024-10-20 00:00:00,2024-10-23 21:12:39.610965,0.0,9.1
 CVE-2024-44730,cvss_vector_v3,2024-10-20 00:00:00,2024-10-23 21:12:39.610965,,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N
 CVE-2024-44730,weaknesses,2024-10-20 00:00:00,2024-10-23 21:12:39.610965,[],"[{""source"": ""134c704f-9b21-4f2e-91b3-4a467353bcc0"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-924""}]}]"
 CVE-2024-44731,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-44731,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-44731,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,MiroTalk
+CVE-2024-44731,last_modified,2024-10-20 00:00:00,2024-11-05 11:01:04.315664,2024-10-15,2024-11-04
+CVE-2024-44731,cvss_score_v3,2024-10-20 00:00:00,2024-11-05 11:01:04.315664,0.0,4.7
+CVE-2024-44731,cvss_vector_v3,2024-10-20 00:00:00,2024-11-05 11:01:04.315664,,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:L/A:N
+CVE-2024-44731,weaknesses,2024-10-20 00:00:00,2024-11-05 11:01:04.315664,[],"[{""source"": ""134c704f-9b21-4f2e-91b3-4a467353bcc0"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-79""}]}]"
 CVE-2024-44734,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-44734,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-44734,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,MiroTalk
 CVE-2024-44734,last_modified,2024-10-20 00:00:00,2024-10-23 21:10:28.295429,2024-10-15,2024-10-16
 CVE-2024-44734,cvss_score_v3,2024-10-20 00:00:00,2024-10-23 21:10:28.295429,0.0,7.5
 CVE-2024-44734,cvss_vector_v3,2024-10-20 00:00:00,2024-10-23 21:10:28.295429,,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
@@ -99,21 +139,26 @@ CVE-2024-44807,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awai
 CVE-2024-44807,cvss_score_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,0.0,5.3
 CVE-2024-44807,cvss_vector_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
 CVE-2024-44807,weaknesses,2024-10-11 00:00:00,2024-10-20 00:00:00,[],"[{""source"": ""134c704f-9b21-4f2e-91b3-4a467353bcc0"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-552""}]}]"
+CVE-2024-44807,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,"D-ZERO CO., LTD."
 CVE-2024-46088,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-46088,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-46088,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Zhejiang University
 CVE-2024-46215,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-46215,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
 CVE-2024-46215,cvss_score_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,0.0,6.5
 CVE-2024-46215,cvss_vector_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,,CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
 CVE-2024-46215,weaknesses,2024-10-11 00:00:00,2024-10-20 00:00:00,[],"[{""source"": ""134c704f-9b21-4f2e-91b3-4a467353bcc0"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-120""}]}]"
+CVE-2024-46215,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,KT
 CVE-2024-46532,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-46532,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-46532,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,上海顶想信息科技有限公司
 CVE-2024-46532,last_modified,2024-10-20 00:00:00,2024-10-23 21:10:05.693917,2024-10-15,2024-10-16
 CVE-2024-46532,cvss_score_v3,2024-10-20 00:00:00,2024-10-23 21:10:05.693917,0.0,9.8
 CVE-2024-46532,cvss_vector_v3,2024-10-20 00:00:00,2024-10-23 21:10:05.693917,,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 CVE-2024-46532,weaknesses,2024-10-20 00:00:00,2024-10-23 21:10:05.693917,[],"[{""source"": ""134c704f-9b21-4f2e-91b3-4a467353bcc0"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-89""}]}]"
 CVE-2024-47084,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-10,2024-10-15
 CVE-2024-47084,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Undergoing Analysis
+CVE-2024-47084,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,GitHub
 CVE-2024-47084,last_modified,2024-10-20 00:00:00,2024-10-23 21:17:23.758414,2024-10-15,2024-10-17
 CVE-2024-47084,vuln_status,2024-10-20 00:00:00,2024-10-23 21:17:23.758414,Undergoing Analysis,Analyzed
 CVE-2024-47084,cvss_score_v3,2024-10-20 00:00:00,2024-10-23 21:17:23.758414,0.0,8.3
@@ -121,16 +166,20 @@ CVE-2024-47084,cvss_vector_v3,2024-10-20 00:00:00,2024-10-23 21:17:23.758414,,CV
 CVE-2024-47084,weaknesses,2024-10-20 00:00:00,2024-10-23 21:17:23.758414,"[{""source"": ""security-advisories@github.com"", ""type"": ""Primary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-285""}]}]","[{""source"": ""nvd@nist.gov"", ""type"": ""Primary"", ""description"": [{""lang"": ""en"", ""value"": ""NVD-CWE-Other""}]}, {""source"": ""security-advisories@github.com"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-285""}]}]"
 CVE-2024-47084,configurations,2024-10-20 00:00:00,2024-10-23 21:17:23.758414,[],"[{""nodes"": [{""operator"": ""OR"", ""negate"": false, ""cpeMatch"": [{""vulnerable"": true, ""criteria"": ""cpe:2.3:a:gradio_project:gradio:*:*:*:*:*:python:*:*"", ""versionEndExcluding"": ""4.44.0"", ""matchCriteriaId"": ""D2722A7B-EC12-4EB1-9BB8-E63496371704""}]}]}]"
 CVE-2024-47084,references,2024-10-20 00:00:00,2024-10-23 21:17:23.758414,"[{""url"": ""https://github.com/gradio-app/gradio/security/advisories/GHSA-3c67-5hwx-f6wx"", ""source"": ""security-advisories@github.com""}]","[{""url"": ""https://github.com/gradio-app/gradio/security/advisories/GHSA-3c67-5hwx-f6wx"", ""source"": ""security-advisories@github.com"", ""tags"": [""Mitigation"", ""Third Party Advisory""]}]"
+CVE-2024-47084,vendor_name,2024-10-20 00:00:00,2024-10-23 21:17:23.758414,GitHub,Gradio
 CVE-2024-47164,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-10,2024-10-15
 CVE-2024-47164,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Undergoing Analysis
+CVE-2024-47164,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,GitHub
 CVE-2024-47164,last_modified,2024-10-20 00:00:00,2024-10-23 21:17:08.327710,2024-10-15,2024-10-17
 CVE-2024-47164,vuln_status,2024-10-20 00:00:00,2024-10-23 21:17:08.327710,Undergoing Analysis,Analyzed
 CVE-2024-47164,cvss_score_v3,2024-10-20 00:00:00,2024-10-23 21:17:08.327710,0.0,6.5
 CVE-2024-47164,cvss_vector_v3,2024-10-20 00:00:00,2024-10-23 21:17:08.327710,,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N
 CVE-2024-47164,configurations,2024-10-20 00:00:00,2024-10-23 21:17:08.327710,[],"[{""nodes"": [{""operator"": ""OR"", ""negate"": false, ""cpeMatch"": [{""vulnerable"": true, ""criteria"": ""cpe:2.3:a:gradio_project:gradio:*:*:*:*:*:python:*:*"", ""versionEndExcluding"": ""5.0.0"", ""matchCriteriaId"": ""32D191C7-095C-427B-832D-C63FE4D4A037""}]}]}]"
 CVE-2024-47164,references,2024-10-20 00:00:00,2024-10-23 21:17:08.327710,"[{""url"": ""https://github.com/gradio-app/gradio/security/advisories/GHSA-77xq-6g77-h274"", ""source"": ""security-advisories@github.com""}]","[{""url"": ""https://github.com/gradio-app/gradio/security/advisories/GHSA-77xq-6g77-h274"", ""source"": ""security-advisories@github.com"", ""tags"": [""Third Party Advisory""]}]"
+CVE-2024-47164,vendor_name,2024-10-20 00:00:00,2024-10-23 21:17:08.327710,GitHub,Gradio
 CVE-2024-47165,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-10,2024-10-15
 CVE-2024-47165,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Undergoing Analysis
+CVE-2024-47165,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,GitHub
 CVE-2024-47165,last_modified,2024-10-20 00:00:00,2024-10-23 21:16:55.038413,2024-10-15,2024-10-17
 CVE-2024-47165,vuln_status,2024-10-20 00:00:00,2024-10-23 21:16:55.038413,Undergoing Analysis,Analyzed
 CVE-2024-47165,cvss_score_v3,2024-10-20 00:00:00,2024-10-23 21:16:55.038413,0.0,5.4
@@ -138,16 +187,20 @@ CVE-2024-47165,cvss_vector_v3,2024-10-20 00:00:00,2024-10-23 21:16:55.038413,,CV
 CVE-2024-47165,weaknesses,2024-10-20 00:00:00,2024-10-23 21:16:55.038413,"[{""source"": ""security-advisories@github.com"", ""type"": ""Primary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-285""}]}]","[{""source"": ""nvd@nist.gov"", ""type"": ""Primary"", ""description"": [{""lang"": ""en"", ""value"": ""NVD-CWE-noinfo""}]}, {""source"": ""security-advisories@github.com"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-285""}]}]"
 CVE-2024-47165,configurations,2024-10-20 00:00:00,2024-10-23 21:16:55.038413,[],"[{""nodes"": [{""operator"": ""OR"", ""negate"": false, ""cpeMatch"": [{""vulnerable"": true, ""criteria"": ""cpe:2.3:a:gradio_project:gradio:*:*:*:*:*:python:*:*"", ""versionEndExcluding"": ""5.0.0"", ""matchCriteriaId"": ""32D191C7-095C-427B-832D-C63FE4D4A037""}]}]}]"
 CVE-2024-47165,references,2024-10-20 00:00:00,2024-10-23 21:16:55.038413,"[{""url"": ""https://github.com/gradio-app/gradio/security/advisories/GHSA-89v2-pqfv-c5r9"", ""source"": ""security-advisories@github.com""}]","[{""url"": ""https://github.com/gradio-app/gradio/security/advisories/GHSA-89v2-pqfv-c5r9"", ""source"": ""security-advisories@github.com"", ""tags"": [""Third Party Advisory""]}]"
+CVE-2024-47165,vendor_name,2024-10-20 00:00:00,2024-10-23 21:16:55.038413,GitHub,Gradio
 CVE-2024-47166,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-10,2024-10-15
 CVE-2024-47166,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Undergoing Analysis
+CVE-2024-47166,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,GitHub
 CVE-2024-47166,last_modified,2024-10-20 00:00:00,2024-10-23 21:16:40.702615,2024-10-15,2024-10-17
 CVE-2024-47166,vuln_status,2024-10-20 00:00:00,2024-10-23 21:16:40.702615,Undergoing Analysis,Analyzed
 CVE-2024-47166,cvss_score_v3,2024-10-20 00:00:00,2024-10-23 21:16:40.702615,0.0,5.3
 CVE-2024-47166,cvss_vector_v3,2024-10-20 00:00:00,2024-10-23 21:16:40.702615,,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
 CVE-2024-47166,configurations,2024-10-20 00:00:00,2024-10-23 21:16:40.702615,[],"[{""nodes"": [{""operator"": ""OR"", ""negate"": false, ""cpeMatch"": [{""vulnerable"": true, ""criteria"": ""cpe:2.3:a:gradio_project:gradio:*:*:*:*:*:python:*:*"", ""versionEndExcluding"": ""4.44.0"", ""matchCriteriaId"": ""D2722A7B-EC12-4EB1-9BB8-E63496371704""}]}]}]"
 CVE-2024-47166,references,2024-10-20 00:00:00,2024-10-23 21:16:40.702615,"[{""url"": ""https://github.com/gradio-app/gradio/security/advisories/GHSA-37qc-qgx6-9xjv"", ""source"": ""security-advisories@github.com""}]","[{""url"": ""https://github.com/gradio-app/gradio/security/advisories/GHSA-37qc-qgx6-9xjv"", ""source"": ""security-advisories@github.com"", ""tags"": [""Third Party Advisory""]}]"
+CVE-2024-47166,vendor_name,2024-10-20 00:00:00,2024-10-23 21:16:40.702615,GitHub,Gradio
 CVE-2024-47167,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-10,2024-10-15
 CVE-2024-47167,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Undergoing Analysis
+CVE-2024-47167,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,GitHub
 CVE-2024-47167,last_modified,2024-10-20 00:00:00,2024-10-23 21:16:27.832046,2024-10-15,2024-10-17
 CVE-2024-47167,vuln_status,2024-10-20 00:00:00,2024-10-23 21:16:27.832046,Undergoing Analysis,Analyzed
 CVE-2024-47167,cvss_score_v3,2024-10-20 00:00:00,2024-10-23 21:16:27.832046,0.0,9.8
@@ -155,18 +208,25 @@ CVE-2024-47167,cvss_vector_v3,2024-10-20 00:00:00,2024-10-23 21:16:27.832046,,CV
 CVE-2024-47167,weaknesses,2024-10-20 00:00:00,2024-10-23 21:16:27.832046,"[{""source"": ""security-advisories@github.com"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-918""}]}]","[{""source"": ""nvd@nist.gov"", ""type"": ""Primary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-918""}]}, {""source"": ""security-advisories@github.com"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-918""}]}]"
 CVE-2024-47167,configurations,2024-10-20 00:00:00,2024-10-23 21:16:27.832046,[],"[{""nodes"": [{""operator"": ""OR"", ""negate"": false, ""cpeMatch"": [{""vulnerable"": true, ""criteria"": ""cpe:2.3:a:gradio_project:gradio:*:*:*:*:*:python:*:*"", ""versionEndExcluding"": ""5.0.0"", ""matchCriteriaId"": ""32D191C7-095C-427B-832D-C63FE4D4A037""}]}]}]"
 CVE-2024-47167,references,2024-10-20 00:00:00,2024-10-23 21:16:27.832046,"[{""url"": ""https://github.com/gradio-app/gradio/security/advisories/GHSA-576c-3j53-r9jj"", ""source"": ""security-advisories@github.com""}]","[{""url"": ""https://github.com/gradio-app/gradio/security/advisories/GHSA-576c-3j53-r9jj"", ""source"": ""security-advisories@github.com"", ""tags"": [""Third Party Advisory""]}]"
+CVE-2024-47167,os_name,2024-10-20 00:00:00,2024-10-23 21:16:27.832046,"['Linux', 'Windows', 'macOS']","['Windows', 'Linux', 'macOS']"
+CVE-2024-47167,vendor_name,2024-10-20 00:00:00,2024-10-23 21:16:27.832046,GitHub,Gradio
 CVE-2024-47168,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-10,2024-10-15
 CVE-2024-47168,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Undergoing Analysis
+CVE-2024-47168,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,GitHub
 CVE-2024-47168,last_modified,2024-10-20 00:00:00,2024-10-23 21:16:13.115137,2024-10-15,2024-10-17
 CVE-2024-47168,vuln_status,2024-10-20 00:00:00,2024-10-23 21:16:13.115137,Undergoing Analysis,Analyzed
 CVE-2024-47168,cvss_score_v3,2024-10-20 00:00:00,2024-10-23 21:16:13.115137,0.0,4.3
 CVE-2024-47168,cvss_vector_v3,2024-10-20 00:00:00,2024-10-23 21:16:13.115137,,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N
 CVE-2024-47168,configurations,2024-10-20 00:00:00,2024-10-23 21:16:13.115137,[],"[{""nodes"": [{""operator"": ""OR"", ""negate"": false, ""cpeMatch"": [{""vulnerable"": true, ""criteria"": ""cpe:2.3:a:gradio_project:gradio:*:*:*:*:*:python:*:*"", ""versionEndExcluding"": ""4.44.0"", ""matchCriteriaId"": ""D2722A7B-EC12-4EB1-9BB8-E63496371704""}]}]}]"
 CVE-2024-47168,references,2024-10-20 00:00:00,2024-10-23 21:16:13.115137,"[{""url"": ""https://github.com/gradio-app/gradio/security/advisories/GHSA-hm3c-93pg-4cxw"", ""source"": ""security-advisories@github.com""}]","[{""url"": ""https://github.com/gradio-app/gradio/security/advisories/GHSA-hm3c-93pg-4cxw"", ""source"": ""security-advisories@github.com"", ""tags"": [""Third Party Advisory""]}]"
+CVE-2024-47168,vendor_name,2024-10-20 00:00:00,2024-10-23 21:16:13.115137,GitHub,Gradio
 CVE-2024-47331,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47331,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-47331,os_name,2024-10-11 00:00:00,2024-10-20 00:00:00,['WordPress'],"['Windows', 'Linux', 'macOS']"
+CVE-2024-47331,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Patchstack
 CVE-2024-47353,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47353,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-47353,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,QuomodoSoft
 CVE-2024-47489,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47489,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
 CVE-2024-47489,description,2024-10-11 00:00:00,2024-10-20 00:00:00,"An Improper Handling of Exceptional Conditions vulnerability in the Packet Forwarding Engine (pfe) of the Juniper Networks Junos OS Evolved on ACX Series devices allows an unauthenticated, network based attacker sending specific transit protocol traffic to cause a partial Denial of Service (DoS) to downstream devices.
@@ -214,8 +274,10 @@ This issue affects Junos OS Evolved: 
   *  from 23.2 before 23.2R2-EVO, 
   *  from 23.4 before 23.4R1-S1-EVO, 23.4R2-EVO, 
   *  from 24.2 before 24.2R2-EVO."
+CVE-2024-47489,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Juniper Networks
 CVE-2024-47490,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47490,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-47490,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Juniper Networks
 CVE-2024-47491,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47491,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
 CVE-2024-47491,description,2024-10-11 00:00:00,2024-10-20 00:00:00,"An Improper Handling of Exceptional Conditions vulnerability in the Routing Protocol Daemon (rpd) of Juniper Networks Junos OS and Junos OS Evolved allows a network-based, unauthenticated attacker to cause Denial of Service (DoS).
@@ -269,6 +331,7 @@ This issue affects:
   *  from 22.4 before 22.4R3-S3-EVO,
   *  from 23.2 before 23.2R2-S1-EVO, 
   *  from 23.4 before 23.4R1-S2-EVO, 23.4R2-EVO."
+CVE-2024-47491,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Juniper Networks
 CVE-2024-47491,last_modified,2024-10-20 00:00:00,2024-10-23 21:12:20.438321,2024-10-15,2024-10-17
 CVE-2024-47491,description,2024-10-20 00:00:00,2024-10-23 21:12:20.438321,"An Improper Handling of Exceptional Conditions vulnerability in the Routing Protocol Daemon (rpd) of Juniper Networks Junos OS and Junos OS Evolved allows a network-based, unauthenticated attacker to cause Denial of Service (DoS).
 
@@ -470,40 +533,59 @@ This issue affects Junos OS on SRX5K, SRX4600 and MX Series: 
   *  from 22.4 before 22.4R3, 
   *  from 23.2 before 23.2R2, 
   *  from 23.4 before 23.4R2."
+CVE-2024-47493,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Juniper Networks
 CVE-2024-47494,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47494,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-47494,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Juniper Networks
 CVE-2024-47495,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47495,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-47495,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Juniper Networks
 CVE-2024-47496,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47496,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-47496,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Juniper Networks
 CVE-2024-47497,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47497,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-47497,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Juniper Networks
 CVE-2024-47498,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47498,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-47498,os_name,2024-10-11 00:00:00,2024-10-20 00:00:00,['Junos OS Evolved'],['Junos OS']
+CVE-2024-47498,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Juniper Networks
 CVE-2024-47499,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47499,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-47499,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Juniper Networks
 CVE-2024-47501,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47501,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-47501,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Juniper Networks
 CVE-2024-47502,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47502,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-47502,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Juniper Networks
 CVE-2024-47503,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47503,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-47503,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Juniper Networks
 CVE-2024-47504,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47504,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-47504,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Juniper Networks
 CVE-2024-47505,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47505,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-47505,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Juniper Networks
 CVE-2024-47506,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47506,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-47506,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Juniper Networks
 CVE-2024-47507,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47507,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-47507,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Juniper Networks
 CVE-2024-47508,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47508,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-47508,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Juniper Networks
 CVE-2024-47509,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47509,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-47509,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Juniper Networks
 CVE-2024-47867,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47867,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-47867,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,GitHub
 CVE-2024-47868,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47868,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Undergoing Analysis
+CVE-2024-47868,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,GitHub
 CVE-2024-47868,published,2024-10-20 00:00:00,2024-10-23 21:15:00.407679,2024-10-11,2024-10-10
 CVE-2024-47868,last_modified,2024-10-20 00:00:00,2024-10-23 21:15:00.407679,2024-10-15,2024-10-17
 CVE-2024-47868,vuln_status,2024-10-20 00:00:00,2024-10-23 21:15:00.407679,Undergoing Analysis,Analyzed
@@ -512,8 +594,10 @@ CVE-2024-47868,cvss_vector_v3,2024-10-20 00:00:00,2024-10-23 21:15:00.407679,,CV
 CVE-2024-47868,weaknesses,2024-10-20 00:00:00,2024-10-23 21:15:00.407679,"[{""source"": ""security-advisories@github.com"", ""type"": ""Primary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-200""}]}]","[{""source"": ""nvd@nist.gov"", ""type"": ""Primary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-22""}]}, {""source"": ""security-advisories@github.com"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-200""}]}]"
 CVE-2024-47868,configurations,2024-10-20 00:00:00,2024-10-23 21:15:00.407679,[],"[{""nodes"": [{""operator"": ""OR"", ""negate"": false, ""cpeMatch"": [{""vulnerable"": true, ""criteria"": ""cpe:2.3:a:gradio_project:gradio:*:*:*:*:*:python:*:*"", ""versionEndExcluding"": ""5.0.0"", ""matchCriteriaId"": ""32D191C7-095C-427B-832D-C63FE4D4A037""}]}]}]"
 CVE-2024-47868,references,2024-10-20 00:00:00,2024-10-23 21:15:00.407679,"[{""url"": ""https://github.com/gradio-app/gradio/security/advisories/GHSA-4q3c-cj7g-jcwf"", ""source"": ""security-advisories@github.com""}]","[{""url"": ""https://github.com/gradio-app/gradio/security/advisories/GHSA-4q3c-cj7g-jcwf"", ""source"": ""security-advisories@github.com"", ""tags"": [""Exploit"", ""Third Party Advisory""]}]"
+CVE-2024-47868,vendor_name,2024-10-20 00:00:00,2024-10-23 21:15:00.407679,GitHub,Gradio
 CVE-2024-47869,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47869,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Undergoing Analysis
+CVE-2024-47869,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,GitHub
 CVE-2024-47869,published,2024-10-20 00:00:00,2024-10-23 21:14:44.620522,2024-10-11,2024-10-10
 CVE-2024-47869,last_modified,2024-10-20 00:00:00,2024-10-23 21:14:44.620522,2024-10-15,2024-10-17
 CVE-2024-47869,vuln_status,2024-10-20 00:00:00,2024-10-23 21:14:44.620522,Undergoing Analysis,Analyzed
@@ -521,8 +605,10 @@ CVE-2024-47869,cvss_score_v3,2024-10-20 00:00:00,2024-10-23 21:14:44.620522,0.0,
 CVE-2024-47869,cvss_vector_v3,2024-10-20 00:00:00,2024-10-23 21:14:44.620522,,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N
 CVE-2024-47869,configurations,2024-10-20 00:00:00,2024-10-23 21:14:44.620522,[],"[{""nodes"": [{""operator"": ""OR"", ""negate"": false, ""cpeMatch"": [{""vulnerable"": true, ""criteria"": ""cpe:2.3:a:gradio_project:gradio:*:*:*:*:*:python:*:*"", ""versionEndExcluding"": ""4.44.0"", ""matchCriteriaId"": ""D2722A7B-EC12-4EB1-9BB8-E63496371704""}]}]}]"
 CVE-2024-47869,references,2024-10-20 00:00:00,2024-10-23 21:14:44.620522,"[{""url"": ""https://github.com/gradio-app/gradio/security/advisories/GHSA-j757-pf57-f8r4"", ""source"": ""security-advisories@github.com""}]","[{""url"": ""https://github.com/gradio-app/gradio/security/advisories/GHSA-j757-pf57-f8r4"", ""source"": ""security-advisories@github.com"", ""tags"": [""Third Party Advisory""]}]"
+CVE-2024-47869,vendor_name,2024-10-20 00:00:00,2024-10-23 21:14:44.620522,GitHub,Gradio
 CVE-2024-47870,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47870,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Undergoing Analysis
+CVE-2024-47870,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,GitHub
 CVE-2024-47870,published,2024-10-20 00:00:00,2024-10-23 21:14:29.566587,2024-10-11,2024-10-10
 CVE-2024-47870,last_modified,2024-10-20 00:00:00,2024-10-23 21:14:29.566587,2024-10-15,2024-10-17
 CVE-2024-47870,vuln_status,2024-10-20 00:00:00,2024-10-23 21:14:29.566587,Undergoing Analysis,Analyzed
@@ -530,8 +616,11 @@ CVE-2024-47870,cvss_score_v3,2024-10-20 00:00:00,2024-10-23 21:14:29.566587,0.0,
 CVE-2024-47870,cvss_vector_v3,2024-10-20 00:00:00,2024-10-23 21:14:29.566587,,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H
 CVE-2024-47870,configurations,2024-10-20 00:00:00,2024-10-23 21:14:29.566587,[],"[{""nodes"": [{""operator"": ""OR"", ""negate"": false, ""cpeMatch"": [{""vulnerable"": true, ""criteria"": ""cpe:2.3:a:gradio_project:gradio:*:*:*:*:*:python:*:*"", ""versionEndExcluding"": ""5.0.0"", ""matchCriteriaId"": ""32D191C7-095C-427B-832D-C63FE4D4A037""}]}]}]"
 CVE-2024-47870,references,2024-10-20 00:00:00,2024-10-23 21:14:29.566587,"[{""url"": ""https://github.com/gradio-app/gradio/security/advisories/GHSA-xh2x-3mrm-fwqm"", ""source"": ""security-advisories@github.com""}]","[{""url"": ""https://github.com/gradio-app/gradio/security/advisories/GHSA-xh2x-3mrm-fwqm"", ""source"": ""security-advisories@github.com"", ""tags"": [""Third Party Advisory""]}]"
+CVE-2024-47870,os_name,2024-10-20 00:00:00,2024-10-23 21:14:29.566587,"['Windows', 'Linux', 'macOS']","['Linux', 'Windows', 'macOS']"
+CVE-2024-47870,vendor_name,2024-10-20 00:00:00,2024-10-23 21:14:29.566587,GitHub,Gradio
 CVE-2024-47871,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47871,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Undergoing Analysis
+CVE-2024-47871,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,null
 CVE-2024-47871,published,2024-10-20 00:00:00,2024-10-23 21:14:15.545353,2024-10-11,2024-10-10
 CVE-2024-47871,last_modified,2024-10-20 00:00:00,2024-10-23 21:14:15.545353,2024-10-15,2024-10-17
 CVE-2024-47871,vuln_status,2024-10-20 00:00:00,2024-10-23 21:14:15.545353,Undergoing Analysis,Analyzed
@@ -540,8 +629,10 @@ CVE-2024-47871,cvss_vector_v3,2024-10-20 00:00:00,2024-10-23 21:14:15.545353,,CV
 CVE-2024-47871,weaknesses,2024-10-20 00:00:00,2024-10-23 21:14:15.545353,"[{""source"": ""security-advisories@github.com"", ""type"": ""Primary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-311""}]}]","[{""source"": ""nvd@nist.gov"", ""type"": ""Primary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-311""}]}, {""source"": ""security-advisories@github.com"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-311""}]}]"
 CVE-2024-47871,configurations,2024-10-20 00:00:00,2024-10-23 21:14:15.545353,[],"[{""nodes"": [{""operator"": ""OR"", ""negate"": false, ""cpeMatch"": [{""vulnerable"": true, ""criteria"": ""cpe:2.3:a:gradio_project:gradio:*:*:*:*:*:python:*:*"", ""versionEndExcluding"": ""5.0.0"", ""matchCriteriaId"": ""32D191C7-095C-427B-832D-C63FE4D4A037""}]}]}]"
 CVE-2024-47871,references,2024-10-20 00:00:00,2024-10-23 21:14:15.545353,"[{""url"": ""https://github.com/gradio-app/gradio/security/advisories/GHSA-279j-x4gx-hfrh"", ""source"": ""security-advisories@github.com""}]","[{""url"": ""https://github.com/gradio-app/gradio/security/advisories/GHSA-279j-x4gx-hfrh"", ""source"": ""security-advisories@github.com"", ""tags"": [""Third Party Advisory""]}]"
+CVE-2024-47871,vendor_name,2024-10-20 00:00:00,2024-10-23 21:14:15.545353,null,Gradio
 CVE-2024-47872,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47872,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Undergoing Analysis
+CVE-2024-47872,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,GitHub
 CVE-2024-47872,published,2024-10-20 00:00:00,2024-10-23 21:13:59.176590,2024-10-11,2024-10-10
 CVE-2024-47872,last_modified,2024-10-20 00:00:00,2024-10-23 21:13:59.176590,2024-10-15,2024-10-17
 CVE-2024-47872,vuln_status,2024-10-20 00:00:00,2024-10-23 21:13:59.176590,Undergoing Analysis,Analyzed
@@ -549,87 +640,121 @@ CVE-2024-47872,cvss_score_v3,2024-10-20 00:00:00,2024-10-23 21:13:59.176590,0.0,
 CVE-2024-47872,cvss_vector_v3,2024-10-20 00:00:00,2024-10-23 21:13:59.176590,,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N
 CVE-2024-47872,configurations,2024-10-20 00:00:00,2024-10-23 21:13:59.176590,[],"[{""nodes"": [{""operator"": ""OR"", ""negate"": false, ""cpeMatch"": [{""vulnerable"": true, ""criteria"": ""cpe:2.3:a:gradio_project:gradio:*:*:*:*:*:python:*:*"", ""versionEndExcluding"": ""5.0.0"", ""matchCriteriaId"": ""32D191C7-095C-427B-832D-C63FE4D4A037""}]}]}]"
 CVE-2024-47872,references,2024-10-20 00:00:00,2024-10-23 21:13:59.176590,"[{""url"": ""https://github.com/gradio-app/gradio/security/advisories/GHSA-gvv6-33j7-884g"", ""source"": ""security-advisories@github.com""}]","[{""url"": ""https://github.com/gradio-app/gradio/security/advisories/GHSA-gvv6-33j7-884g"", ""source"": ""security-advisories@github.com"", ""tags"": [""Third Party Advisory""]}]"
+CVE-2024-47872,vendor_name,2024-10-20 00:00:00,2024-10-23 21:13:59.176590,GitHub,Gradio
 CVE-2024-47875,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47875,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-47875,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,cure53
 CVE-2024-47877,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47877,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-47877,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,codeclysm
 CVE-2024-47884,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-47884,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-47884,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,zefr0x
 CVE-2024-48020,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-48020,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-48020,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,WP Time Capsule
 CVE-2024-48033,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-48033,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-48033,os_name,2024-10-11 00:00:00,2024-10-20 00:00:00,"['Linux', 'Windows', 'macOS']",['WordPress']
+CVE-2024-48033,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Patchstack
 CVE-2024-48040,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-48040,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-48040,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Tainacan Community
 CVE-2024-48041,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-48041,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-48041,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,CreativeMindsSolutions
 CVE-2024-48768,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-48768,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
 CVE-2024-48768,cvss_score_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,0.0,7.5
 CVE-2024-48768,cvss_vector_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
 CVE-2024-48768,weaknesses,2024-10-11 00:00:00,2024-10-20 00:00:00,[],"[{""source"": ""134c704f-9b21-4f2e-91b3-4a467353bcc0"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-306""}]}]"
+CVE-2024-48768,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,almaodo GmbH
 CVE-2024-48769,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-48769,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
 CVE-2024-48769,cvss_score_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,0.0,9.1
 CVE-2024-48769,cvss_vector_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N
 CVE-2024-48769,weaknesses,2024-10-11 00:00:00,2024-10-20 00:00:00,[],"[{""source"": ""134c704f-9b21-4f2e-91b3-4a467353bcc0"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-863""}]}]"
+CVE-2024-48769,os_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,"['Android', 'iOS']"
+CVE-2024-48769,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,BURG-WCHTER KG
 CVE-2024-48770,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-48770,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
 CVE-2024-48770,cvss_score_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,0.0,8.2
 CVE-2024-48770,cvss_vector_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N
 CVE-2024-48770,weaknesses,2024-10-11 00:00:00,2024-10-20 00:00:00,[],"[{""source"": ""134c704f-9b21-4f2e-91b3-4a467353bcc0"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-922""}]}]"
+CVE-2024-48770,os_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,"['Android', 'iOS']"
+CVE-2024-48770,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Plug n Play Camera
 CVE-2024-48771,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-48771,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
 CVE-2024-48771,cvss_score_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,0.0,7.5
 CVE-2024-48771,cvss_vector_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
 CVE-2024-48771,weaknesses,2024-10-11 00:00:00,2024-10-20 00:00:00,[],"[{""source"": ""134c704f-9b21-4f2e-91b3-4a467353bcc0"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-306""}]}]"
+CVE-2024-48771,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,almando GmbH
 CVE-2024-48773,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-48773,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
 CVE-2024-48773,cvss_score_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,0.0,7.5
 CVE-2024-48773,cvss_vector_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
 CVE-2024-48773,weaknesses,2024-10-11 00:00:00,2024-10-20 00:00:00,[],"[{""source"": ""134c704f-9b21-4f2e-91b3-4a467353bcc0"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-306""}]}]"
+CVE-2024-48773,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,"Wo-smart Technologies (Shenzhen) Co., LTD"
 CVE-2024-48774,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-48774,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-48774,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Fermax Asia Pacific Pte Ltd
 CVE-2024-48775,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-48775,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
 CVE-2024-48775,cvss_score_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,0.0,7.5
 CVE-2024-48775,cvss_vector_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
 CVE-2024-48775,weaknesses,2024-10-11 00:00:00,2024-10-20 00:00:00,[],"[{""source"": ""134c704f-9b21-4f2e-91b3-4a467353bcc0"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-306""}]}]"
+CVE-2024-48775,os_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,['Android']
+CVE-2024-48775,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,null
 CVE-2024-48776,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-48776,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
 CVE-2024-48776,cvss_score_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,0.0,7.5
 CVE-2024-48776,cvss_vector_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
 CVE-2024-48776,weaknesses,2024-10-11 00:00:00,2024-10-20 00:00:00,[],"[{""source"": ""134c704f-9b21-4f2e-91b3-4a467353bcc0"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-306""}]}]"
+CVE-2024-48776,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Shelly
 CVE-2024-48777,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-48777,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
 CVE-2024-48777,cvss_score_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,0.0,7.5
 CVE-2024-48777,cvss_vector_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
 CVE-2024-48777,weaknesses,2024-10-11 00:00:00,2024-10-20 00:00:00,[],"[{""source"": ""134c704f-9b21-4f2e-91b3-4a467353bcc0"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-306""}]}]"
+CVE-2024-48777,os_name,2024-10-11 00:00:00,2024-10-20 00:00:00,"['Android', 'iOS', 'Windows', 'Linux']","['Android', 'iOS']"
+CVE-2024-48777,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,LEDVANCE
 CVE-2024-48778,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-48778,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
 CVE-2024-48778,cvss_score_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,0.0,9.1
 CVE-2024-48778,cvss_vector_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N
 CVE-2024-48778,weaknesses,2024-10-11 00:00:00,2024-10-20 00:00:00,[],"[{""source"": ""134c704f-9b21-4f2e-91b3-4a467353bcc0"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-863""}]}]"
+CVE-2024-48778,os_name,2024-10-11 00:00:00,2024-10-20 00:00:00,['Ubuntu'],['Linux']
+CVE-2024-48778,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,"GIANT MANUFACTURING CO., LTD."
 CVE-2024-48784,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-48784,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
 CVE-2024-48784,cvss_score_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,0.0,9.8
 CVE-2024-48784,cvss_vector_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 CVE-2024-48784,weaknesses,2024-10-11 00:00:00,2024-10-20 00:00:00,[],"[{""source"": ""134c704f-9b21-4f2e-91b3-4a467353bcc0"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-863""}]}]"
+CVE-2024-48784,os_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,"['Android', 'iOS']"
+CVE-2024-48784,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,SAMPMAX
 CVE-2024-48786,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-48786,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
 CVE-2024-48786,cvss_score_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,0.0,9.1
 CVE-2024-48786,cvss_vector_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N
 CVE-2024-48786,weaknesses,2024-10-11 00:00:00,2024-10-20 00:00:00,[],"[{""source"": ""134c704f-9b21-4f2e-91b3-4a467353bcc0"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-863""}]}]"
+CVE-2024-48786,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,SWITCHBOT INC
 CVE-2024-48813,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-48813,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-48813,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,null
 CVE-2024-48827,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-48827,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-48827,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,sbondCo
 CVE-2024-5474,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-5474,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-5474,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Lenovo
 CVE-2024-6985,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-6985,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-6985,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,ParisNeo
 CVE-2024-8376,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-8376,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-8376,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Eclipse Foundation
+CVE-2024-8376,last_modified,2024-10-20 00:00:00,2024-11-05 11:01:25.491914,2024-10-15,2024-10-31
+CVE-2024-8376,references,2024-10-20 00:00:00,2024-11-05 11:01:25.491914,"[{""url"": ""https://github.com/eclipse/mosquitto/releases/tag/v2.0.19"", ""source"": ""emo@eclipse.org""}, {""url"": ""https://gitlab.eclipse.org/security/cve-assignement/-/issues/26"", ""source"": ""emo@eclipse.org""}, {""url"": ""https://gitlab.eclipse.org/security/vulnerability-reports/-/issues/216"", ""source"": ""emo@eclipse.org""}, {""url"": ""https://gitlab.eclipse.org/security/vulnerability-reports/-/issues/217"", ""source"": ""emo@eclipse.org""}, {""url"": ""https://gitlab.eclipse.org/security/vulnerability-reports/-/issues/218"", ""source"": ""emo@eclipse.org""}, {""url"": ""https://gitlab.eclipse.org/security/vulnerability-reports/-/issues/227"", ""source"": ""emo@eclipse.org""}, {""url"": ""https://mosquitto.org/"", ""source"": ""emo@eclipse.org""}]","[{""url"": ""https://github.com/eclipse-mosquitto/mosquitto/commit/1914b3ee2a18102d0a94cbdbbfeae1afa03edd17"", ""source"": ""emo@eclipse.org""}, {""url"": ""https://github.com/eclipse/mosquitto/releases/tag/v2.0.19"", ""source"": ""emo@eclipse.org""}, {""url"": ""https://gitlab.eclipse.org/security/cve-assignement/-/issues/26"", ""source"": ""emo@eclipse.org""}, {""url"": ""https://gitlab.eclipse.org/security/vulnerability-reports/-/issues/216"", ""source"": ""emo@eclipse.org""}, {""url"": ""https://gitlab.eclipse.org/security/vulnerability-reports/-/issues/217"", ""source"": ""emo@eclipse.org""}, {""url"": ""https://gitlab.eclipse.org/security/vulnerability-reports/-/issues/218"", ""source"": ""emo@eclipse.org""}, {""url"": ""https://gitlab.eclipse.org/security/vulnerability-reports/-/issues/227"", ""source"": ""emo@eclipse.org""}, {""url"": ""https://mosquitto.org/"", ""source"": ""emo@eclipse.org""}]"
 CVE-2024-8755,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-8755,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
 CVE-2024-8755,description,2024-10-11 00:00:00,2024-10-20 00:00:00,"Improper Input Validation vulnerability of Authenticated User in Progress LoadMaster allows : OS Command Injection.This issue affects:
@@ -793,10 +918,13 @@ ECS
 
 
 All prior versions to 7.2.60.1 (inclusive)"
+CVE-2024-8755,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Progress
 CVE-2024-8912,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-8912,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-8912,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Google
 CVE-2024-9046,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-9046,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-9046,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Lenovo
 CVE-2024-9046,last_modified,2024-10-20 00:00:00,2024-10-23 21:10:43.630712,2024-10-15,2024-10-17
 CVE-2024-9046,vuln_status,2024-10-20 00:00:00,2024-10-23 21:10:43.630712,Awaiting Analysis,Analyzed
 CVE-2024-9046,weaknesses,2024-10-20 00:00:00,2024-10-23 21:10:43.630712,"[{""source"": ""psirt@lenovo.com"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-427""}]}]","[{""source"": ""nvd@nist.gov"", ""type"": ""Primary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-427""}]}, {""source"": ""psirt@lenovo.com"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-427""}]}]"
@@ -804,10 +932,13 @@ CVE-2024-9046,configurations,2024-10-20 00:00:00,2024-10-23 21:10:43.630712,[],"
 CVE-2024-9046,references,2024-10-20 00:00:00,2024-10-23 21:10:43.630712,"[{""url"": ""https://iknow.lenovo.com.cn/detail/423563"", ""source"": ""psirt@lenovo.com""}]","[{""url"": ""https://iknow.lenovo.com.cn/detail/423563"", ""source"": ""psirt@lenovo.com"", ""tags"": [""Vendor Advisory""]}]"
 CVE-2024-9487,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-10,2024-10-15
 CVE-2024-9487,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-9487,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,GitHub
 CVE-2024-9539,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-9539,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-9539,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,GitHub
 CVE-2024-9814,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-10,2024-10-15
 CVE-2024-9814,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Undergoing Analysis
+CVE-2024-9814,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Codezips
 CVE-2024-9814,last_modified,2024-10-20 00:00:00,2024-10-23 21:16:00.557936,2024-10-15,2024-10-17
 CVE-2024-9814,vuln_status,2024-10-20 00:00:00,2024-10-23 21:16:00.557936,Undergoing Analysis,Analyzed
 CVE-2024-9814,cvss_score_v3,2024-10-20 00:00:00,2024-10-23 21:16:00.557936,7.3,9.8
@@ -816,6 +947,7 @@ CVE-2024-9814,configurations,2024-10-20 00:00:00,2024-10-23 21:16:00.557936,[],"
 CVE-2024-9814,references,2024-10-20 00:00:00,2024-10-23 21:16:00.557936,"[{""url"": ""https://github.com/ppp-src/CVE/issues/11"", ""source"": ""cna@vuldb.com""}, {""url"": ""https://vuldb.com/?ctiid.279966"", ""source"": ""cna@vuldb.com""}, {""url"": ""https://vuldb.com/?id.279966"", ""source"": ""cna@vuldb.com""}, {""url"": ""https://vuldb.com/?submit.418905"", ""source"": ""cna@vuldb.com""}]","[{""url"": ""https://github.com/ppp-src/CVE/issues/11"", ""source"": ""cna@vuldb.com"", ""tags"": [""Exploit"", ""Third Party Advisory""]}, {""url"": ""https://vuldb.com/?ctiid.279966"", ""source"": ""cna@vuldb.com"", ""tags"": [""Permissions Required"", ""Third Party Advisory"", ""VDB Entry""]}, {""url"": ""https://vuldb.com/?id.279966"", ""source"": ""cna@vuldb.com"", ""tags"": [""Third Party Advisory"", ""VDB Entry""]}, {""url"": ""https://vuldb.com/?submit.418905"", ""source"": ""cna@vuldb.com"", ""tags"": [""Third Party Advisory"", ""VDB Entry""]}]"
 CVE-2024-9815,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-10,2024-10-15
 CVE-2024-9815,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Undergoing Analysis
+CVE-2024-9815,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Codezips
 CVE-2024-9815,last_modified,2024-10-20 00:00:00,2024-10-23 21:15:43.876106,2024-10-15,2024-10-17
 CVE-2024-9815,vuln_status,2024-10-20 00:00:00,2024-10-23 21:15:43.876106,Undergoing Analysis,Analyzed
 CVE-2024-9815,cvss_score_v3,2024-10-20 00:00:00,2024-10-23 21:15:43.876106,4.7,7.2
@@ -824,6 +956,7 @@ CVE-2024-9815,configurations,2024-10-20 00:00:00,2024-10-23 21:15:43.876106,[],"
 CVE-2024-9815,references,2024-10-20 00:00:00,2024-10-23 21:15:43.876106,"[{""url"": ""https://github.com/ppp-src/CVE/issues/12"", ""source"": ""cna@vuldb.com""}, {""url"": ""https://vuldb.com/?ctiid.279967"", ""source"": ""cna@vuldb.com""}, {""url"": ""https://vuldb.com/?id.279967"", ""source"": ""cna@vuldb.com""}, {""url"": ""https://vuldb.com/?submit.418917"", ""source"": ""cna@vuldb.com""}]","[{""url"": ""https://github.com/ppp-src/CVE/issues/12"", ""source"": ""cna@vuldb.com"", ""tags"": [""Exploit"", ""Third Party Advisory""]}, {""url"": ""https://vuldb.com/?ctiid.279967"", ""source"": ""cna@vuldb.com"", ""tags"": [""Permissions Required"", ""Third Party Advisory"", ""VDB Entry""]}, {""url"": ""https://vuldb.com/?id.279967"", ""source"": ""cna@vuldb.com"", ""tags"": [""Third Party Advisory"", ""VDB Entry""]}, {""url"": ""https://vuldb.com/?submit.418917"", ""source"": ""cna@vuldb.com"", ""tags"": [""Third Party Advisory"", ""VDB Entry""]}]"
 CVE-2024-9816,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-10,2024-10-15
 CVE-2024-9816,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Undergoing Analysis
+CVE-2024-9816,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Codezips
 CVE-2024-9816,last_modified,2024-10-20 00:00:00,2024-10-23 21:15:19.320931,2024-10-15,2024-10-17
 CVE-2024-9816,vuln_status,2024-10-20 00:00:00,2024-10-23 21:15:19.320931,Undergoing Analysis,Analyzed
 CVE-2024-9816,cvss_score_v3,2024-10-20 00:00:00,2024-10-23 21:15:19.320931,4.7,7.2
@@ -832,6 +965,7 @@ CVE-2024-9816,configurations,2024-10-20 00:00:00,2024-10-23 21:15:19.320931,[],"
 CVE-2024-9816,references,2024-10-20 00:00:00,2024-10-23 21:15:19.320931,"[{""url"": ""https://github.com/ppp-src/CVE/issues/13"", ""source"": ""cna@vuldb.com""}, {""url"": ""https://vuldb.com/?ctiid.279968"", ""source"": ""cna@vuldb.com""}, {""url"": ""https://vuldb.com/?id.279968"", ""source"": ""cna@vuldb.com""}, {""url"": ""https://vuldb.com/?submit.418918"", ""source"": ""cna@vuldb.com""}]","[{""url"": ""https://github.com/ppp-src/CVE/issues/13"", ""source"": ""cna@vuldb.com"", ""tags"": [""Exploit"", ""Third Party Advisory""]}, {""url"": ""https://vuldb.com/?ctiid.279968"", ""source"": ""cna@vuldb.com"", ""tags"": [""Permissions Required"", ""Third Party Advisory"", ""VDB Entry""]}, {""url"": ""https://vuldb.com/?id.279968"", ""source"": ""cna@vuldb.com"", ""tags"": [""Third Party Advisory"", ""VDB Entry""]}, {""url"": ""https://vuldb.com/?submit.418918"", ""source"": ""cna@vuldb.com"", ""tags"": [""Third Party Advisory"", ""VDB Entry""]}]"
 CVE-2024-9817,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-9817,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Undergoing Analysis
+CVE-2024-9817,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,code-projects.org
 CVE-2024-9817,published,2024-10-20 00:00:00,2024-10-23 21:13:45.031753,2024-10-11,2024-10-10
 CVE-2024-9817,last_modified,2024-10-20 00:00:00,2024-10-23 21:13:45.031753,2024-10-15,2024-10-17
 CVE-2024-9817,vuln_status,2024-10-20 00:00:00,2024-10-23 21:13:45.031753,Undergoing Analysis,Analyzed
@@ -839,8 +973,10 @@ CVE-2024-9817,cvss_score_v3,2024-10-20 00:00:00,2024-10-23 21:13:45.031753,6.3,8
 CVE-2024-9817,cvss_vector_v3,2024-10-20 00:00:00,2024-10-23 21:13:45.031753,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
 CVE-2024-9817,configurations,2024-10-20 00:00:00,2024-10-23 21:13:45.031753,[],"[{""nodes"": [{""operator"": ""OR"", ""negate"": false, ""cpeMatch"": [{""vulnerable"": true, ""criteria"": ""cpe:2.3:a:blood_bank_system_project:blood_bank_system:1.0:*:*:*:*:*:*:*"", ""matchCriteriaId"": ""22113613-2FC7-4FFC-90C1-D54D63A5108B""}]}]}]"
 CVE-2024-9817,references,2024-10-20 00:00:00,2024-10-23 21:13:45.031753,"[{""url"": ""https://code-projects.org/"", ""source"": ""cna@vuldb.com""}, {""url"": ""https://github.com/RonenWen/cve/blob/main/sql6-update-name.md"", ""source"": ""cna@vuldb.com""}, {""url"": ""https://vuldb.com/?ctiid.279969"", ""source"": ""cna@vuldb.com""}, {""url"": ""https://vuldb.com/?id.279969"", ""source"": ""cna@vuldb.com""}, {""url"": ""https://vuldb.com/?submit.421134"", ""source"": ""cna@vuldb.com""}]","[{""url"": ""https://code-projects.org/"", ""source"": ""cna@vuldb.com"", ""tags"": [""Product""]}, {""url"": ""https://github.com/RonenWen/cve/blob/main/sql6-update-name.md"", ""source"": ""cna@vuldb.com"", ""tags"": [""Exploit"", ""Third Party Advisory""]}, {""url"": ""https://vuldb.com/?ctiid.279969"", ""source"": ""cna@vuldb.com"", ""tags"": [""Permissions Required""]}, {""url"": ""https://vuldb.com/?id.279969"", ""source"": ""cna@vuldb.com"", ""tags"": [""Third Party Advisory""]}, {""url"": ""https://vuldb.com/?submit.421134"", ""source"": ""cna@vuldb.com"", ""tags"": [""Third Party Advisory""]}]"
+CVE-2024-9817,vendor_name,2024-10-20 00:00:00,2024-10-23 21:13:45.031753,code-projects.org,Blood Bank System Project
 CVE-2024-9818,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-9818,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Undergoing Analysis
+CVE-2024-9818,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,SourceCodester
 CVE-2024-9818,published,2024-10-20 00:00:00,2024-10-23 21:13:19.169875,2024-10-11,2024-10-10
 CVE-2024-9818,last_modified,2024-10-20 00:00:00,2024-10-23 21:13:19.169875,2024-10-15,2024-10-17
 CVE-2024-9818,vuln_status,2024-10-20 00:00:00,2024-10-23 21:13:19.169875,Undergoing Analysis,Analyzed
@@ -850,8 +986,10 @@ CVE-2024-9818,configurations,2024-10-20 00:00:00,2024-10-23 21:13:19.169875,[],"
 CVE-2024-9818,references,2024-10-20 00:00:00,2024-10-23 21:13:19.169875,"[{""url"": ""https://github.com/fezzyang/CVE_report/blob/main/online-veterinary-appointment-system/SQLi.md"", ""source"": ""cna@vuldb.com""}, {""url"": ""https://vuldb.com/?ctiid.279972"", ""source"": ""cna@vuldb.com""}, {""url"": ""https://vuldb.com/?id.279972"", ""source"": ""cna@vuldb.com""}, {""url"": ""https://vuldb.com/?submit.421548"", ""source"": ""cna@vuldb.com""}, {""url"": ""https://www.sourcecodester.com/"", ""source"": ""cna@vuldb.com""}]","[{""url"": ""https://github.com/fezzyang/CVE_report/blob/main/online-veterinary-appointment-system/SQLi.md"", ""source"": ""cna@vuldb.com"", ""tags"": [""Exploit"", ""Third Party Advisory""]}, {""url"": ""https://vuldb.com/?ctiid.279972"", ""source"": ""cna@vuldb.com"", ""tags"": [""Permissions Required""]}, {""url"": ""https://vuldb.com/?id.279972"", ""source"": ""cna@vuldb.com"", ""tags"": [""Third Party Advisory""]}, {""url"": ""https://vuldb.com/?submit.421548"", ""source"": ""cna@vuldb.com"", ""tags"": [""Third Party Advisory""]}, {""url"": ""https://www.sourcecodester.com/"", ""source"": ""cna@vuldb.com"", ""tags"": [""Product""]}]"
 CVE-2024-9822,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-9822,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
+CVE-2024-9822,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,WordPress
 CVE-2024-9859,last_modified,2024-10-11 00:00:00,2024-10-20 00:00:00,2024-10-11,2024-10-15
 CVE-2024-9859,vuln_status,2024-10-11 00:00:00,2024-10-20 00:00:00,Received,Awaiting Analysis
 CVE-2024-9859,cvss_score_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,0.0,8.8
 CVE-2024-9859,cvss_vector_v3,2024-10-11 00:00:00,2024-10-20 00:00:00,,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
 CVE-2024-9859,weaknesses,2024-10-11 00:00:00,2024-10-20 00:00:00,"[{""source"": ""chrome-cve-admin@google.com"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-843""}]}]","[{""source"": ""chrome-cve-admin@google.com"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-843""}]}, {""source"": ""134c704f-9b21-4f2e-91b3-4a467353bcc0"", ""type"": ""Secondary"", ""description"": [{""lang"": ""en"", ""value"": ""CWE-843""}]}]"
+CVE-2024-9859,vendor_name,2024-10-11 00:00:00,2024-10-20 00:00:00,,Google
